@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shamrock Technologies</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- HEADER-SECTION -->
+    <header class="sticky top-0 left-0 w-full h-20">
+      <div class="max-w-7xl mx-auto h-full px-5">
+        <nav class="flex items-center justify-between relative">
+          <!-- BRAND-LOGO -->
+          <a
+            href="index.html"
+            class="w-20 h-20 inline-flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="assets/images/logo/logo-white.png"
+              alt="BRAND-LOGO"
+              class="object-contain"
+            />
+          </a>
+
+          <!-- MAIN-MENU -->
+          <ul class="hidden lg:flex items-center justify-center gap-4 flex-1">
+            <li class="ms-auto">
+              <a
+                href="about.html"
+                class="inline-flex items-center justify-center text-white font-inter text-sm"
+              >
+                About us
+              </a>
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="inline-flex items-center justify-center text-white font-inter text-sm"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="pricing.html"
+                class="inline-flex items-center justify-center text-white font-inter text-sm ripple-button"
+              >
+                Pricing
+              </a>
+            </li>
+
+            <li class="ms-auto">
+              <a
+                href="contact.html"
+                class="inline-flex items-center justify-center gap-1 bg-white text-slate-900 w-28 h-10 font-inter font-semibold text-sm group transition-all duration-300 before:ease-in-out relative overflow-hidden before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:translate-x-20 before:rotate-45 before:bg-neutral-600 before:duration-300 hover:text-white hover:bg-neutral-600 hover:before:h-64 hover:before:-translate-y-32"
+              >
+                <span class="relative z-10">Contact</span>
+                <span
+                  class="font-xs transition-all duration-300 ease-in-out group-hover:translate-x-1 relative z-10"
+                >
+                  <svg
+                    width=" 14"
+                    height="14"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.78117 5.33312L5.20517 1.75712L6.14784 0.814453L11.3332 5.99979L6.14784 11.1851L5.20517 10.2425L8.78117 6.66645H0.666504V5.33312H8.78117Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MOBILE MENU -->
+          <div class="lg:hidden">
+            <div class="drawer">
+              <!-- Drawer toggle checkbox -->
+              <input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
+
+              <div class="drawer-content">
+                <label
+                  for="my-drawer-1"
+                  class="swap swap-rotate cursor-pointer w-8 h-8 relative"
+                >
+                  <input type="checkbox" class="peer" />
+                  <!-- Hamburger icon -->
+                  <svg
+                    class="swap-off fill-current w-8 h-8 transition-transform duration-300 ease-in-out peer-checked:-rotate-45 peer-checked:scale-90"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                    />
+                  </svg>
+
+                  <!-- Close icon -->
+                  <svg
+                    class="swap-on fill-current w-8 h-8 transition-transform duration-300 ease-in-out peer-checked:rotate-0 peer-checked:scale-100"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <polygon
+                      points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                    />
+                  </svg>
+                </label>
+              </div>
+
+              <!-- Drawer side -->
+              <div class="drawer-side">
+                <label
+                  for="my-drawer-1"
+                  aria-label="close sidebar"
+                  class="drawer-overlay"
+                ></label>
+                <ul class="bg-(--dark) min-h-full w-80 p-4 flex flex-col gap-3">
+                  <li>
+                    <a
+                      href="about.html"
+                      class="inline-flex items-center justify-center text-white font-inter text-sm"
+                    >
+                      About us
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="services.html"
+                      class="inline-flex items-center justify-center text-white font-inter text-sm"
+                    >
+                      Services
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="pricing.html"
+                      class="inline-flex items-center justify-center text-white font-inter text-sm ripple-button"
+                    >
+                      Pricing
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="inline-flex items-center justify-center gap-1 bg-white text-slate-900 w-28 h-10 font-inter font-semibold text-sm group transition-all duration-300 before:ease-in-out relative overflow-hidden before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:translate-x-20 before:rotate-45 before:bg-neutral-600 before:duration-300 hover:text-white hover:bg-neutral-600 hover:before:h-64 hover:before:-translate-y-32"
+                    >
+                      <span class="relative z-10">Contact</span>
+                      <span
+                        class="font-xs transition-all duration-300 ease-in-out group-hover:translate-x-1 relative z-10"
+                      >
+                        <svg
+                          width=" 14"
+                          height="14"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.78117 5.33312L5.20517 1.75712L6.14784 0.814453L11.3332 5.99979L6.14784 11.1851L5.20517 10.2425L8.78117 6.66645H0.666504V5.33312H8.78117Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "shamrock-technologies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.15",
+    "tailwind-hamburgers": "^1.3.5",
+    "tailwindcss": "^4.1.15"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "daisyui": "^5.3.8"
+  }
+}

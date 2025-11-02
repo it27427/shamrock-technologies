@@ -1,0 +1,14 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "tailwindCSS.classFunctions": [
+    "tw",
+    "clsx",
+    "tw\\.[a-z-]+"
+  ],
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "iis.configDir": ".\\"
+}
