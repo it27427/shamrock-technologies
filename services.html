@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="Digital Marketing Agency" />
+    <meta
+      property="og:title"
+      content="Shamrock Technology | IT Consultancy Digital Marketing Service"
+    />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Shamrock Technology, IT Consultancy Digital Marketing Service, SEO, Website, Ecommerce, Mobile App"
+    />
+    <meta
+      name="description"
+      content="Shamrock Technology, IT Consultancy Digital Marketing Service, SEO, Website, Ecommerce, Mobile App"
+    />
+    <title>Shamrock Technologies | Services</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- HEADER-SECTION -->
+    <header class="w-full h-screen lg:h-20">
+      <div class="max-w-7xl mx-auto lg:h-full">
+        <nav class="flex items-center justify-between relative px-5">
+          <!-- BRAND-LOGO -->
+          <a
+            href="index.html"
+            class="w-20 inline-flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="assets/images/logo/logo-white.png"
+              alt="BRAND-LOGO"
+              class="object-contain"
+            />
+          </a>
+
+          <!-- MOBILE MENU -->
+          <button
+            id="open-menu-btn"
+            class="cursor-pointer bg-white text-sm font-medium text-black w-10 h-10 flex items-center justify-center transition-all duration-300 font-inter lg:hidden"
+          >
+            <span class="open">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </span>
+
+            <span class="hidden close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                />
+              </svg>
+            </span>
+          </button>
+
+          <!-- MAIN-MENU -->
+          <ul
+            class="menulist w-full lg:w-auto hidden lg:flex items-center justify-center gap-4 flex-1 absolute top-22 left-0 lg:top-0 border-t border-gray-400 lg:border-t-0 lg:relative z-10 space-y-4 lg:space-y-0 px-4 lg:px-0 pt-4 lg:pt-0"
+          >
+            <li class="lg:ms-auto">
+              <a
+                href="about.html"
+                class="inline-flex items-center justify-center text-white font-inter text-sm"
+              >
+                About us
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="services.html"
+                class="inline-flex items-center justify-center text-white font-inter text-sm"
+              >
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="pricing.html"
+                class="inline-flex items-center justify-center text-white font-inter text-sm ripple-button"
+              >
+                Pricing
+              </a>
+            </li>
+
+            <li class="lg:ms-auto">
+              <a
+                href="contact.html"
+                class="inline-flex items-center justify-center gap-1 bg-white text-slate-900 w-28 h-10 font-inter font-semibold text-sm group transition-all duration-300 before:ease-in-out relative overflow-hidden before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:translate-x-20 before:rotate-45 before:bg-neutral-600 before:duration-300 hover:text-white hover:bg-neutral-600 hover:before:h-64 hover:before:-translate-y-32"
+              >
+                <span class="relative z-10">Contact</span>
+                <span
+                  class="font-xs transition-all duration-300 ease-in-out group-hover:translate-x-1 relative z-10"
+                >
+                  <svg
+                    width=" 14"
+                    height="14"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.78117 5.33312L5.20517 1.75712L6.14784 0.814453L11.3332 5.99979L6.14784 11.1851L5.20517 10.2425L8.78117 6.66645H0.666504V5.33312H8.78117Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MOBILE MENU -->
+        </nav>
+      </div>
+    </header>
+
+    <!-- PRELOADER -->
+    <div
+      class="w-full h-screen flex items-center justify-center fixed top-0 left-0 z-50 bg-(--dark)"
+      id="preloader"
+    >
+      <span class="loading loading-infinity loading-xl text-success"></span>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/pageloader.js"></script>
+    <script src="assets/js/menu.js"></script>
+
+    <!-- <script src="assets/js/copyright.js"></script> -->
+  </body>
+</html>
