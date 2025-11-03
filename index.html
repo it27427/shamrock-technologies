@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:site_name" content="Degital Marketing Agency" />
+    <meta property="og:site_name" content="Digital Marketing Agency" />
     <meta
       property="og:title"
-      content="Shamrock Technology | IT Consultancy Degital Marketing Service"
+      content="Shamrock Technology | IT Consultancy Digital Marketing Service"
     />
-    <meta property="og:url" content="https://www.shamrocktech.ie" />
+    <meta property="og:url" content="" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="Shamrock Technology, IT Consultancy Degital Marketing Service, SEO, Website, Ecommerce, Mobile app "
+      content="Shamrock Technology, IT Consultancy Digital Marketing Service, SEO, Website, Ecommerce, Mobile App"
     />
     <meta
       name="description"
-      content="Shamrock Technology, IT Consultancy Degital Marketing Service, SEO, Website, Ecommerce, Mobile app"
+      content="Shamrock Technology, IT Consultancy Digital Marketing Service, SEO, Website, Ecommerce, Mobile App"
     />
     <title>Shamrock Technologies</title>
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -28,13 +28,13 @@
   </head>
   <body>
     <!-- HEADER-SECTION -->
-    <header class="sticky top-0 left-0 w-full h-20">
-      <div class="max-w-7xl mx-auto h-full px-5">
-        <nav class="flex items-center justify-between relative">
+    <header class="w-full h-screen lg:h-20">
+      <div class="max-w-7xl mx-auto lg:h-full">
+        <nav class="flex items-center justify-between relative px-5">
           <!-- BRAND-LOGO -->
           <a
             href="index.html"
-            class="w-20 h-20 inline-flex items-center justify-center overflow-hidden"
+            class="w-20 inline-flex items-center justify-center overflow-hidden"
           >
             <img
               src="assets/images/logo/logo-white.png"
@@ -43,9 +43,46 @@
             />
           </a>
 
+          <!-- MOBILE MENU -->
+          <button
+            id="open-menu-btn"
+            class="cursor-pointer bg-white text-sm font-medium text-black w-10 h-10 flex items-center justify-center transition-all duration-300 font-inter lg:hidden"
+          >
+            <span class="open">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </span>
+
+            <span class="hidden close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                />
+              </svg>
+            </span>
+          </button>
+
           <!-- MAIN-MENU -->
-          <ul class="hidden lg:flex items-center justify-center gap-4 flex-1">
-            <li class="ms-auto">
+          <ul
+            class="menulist w-full lg:w-auto hidden lg:flex items-center justify-center gap-4 flex-1 absolute top-22 left-0 lg:top-0 border-t border-gray-400 lg:border-t-0 lg:relative z-10 space-y-4 lg:space-y-0 px-4 lg:px-0 pt-4 lg:pt-0"
+          >
+            <li class="lg:ms-auto">
               <a
                 href="about.html"
                 class="inline-flex items-center justify-center text-white font-inter text-sm"
@@ -53,6 +90,7 @@
                 About us
               </a>
             </li>
+
             <li>
               <a
                 href="services.html"
@@ -61,6 +99,7 @@
                 Services
               </a>
             </li>
+
             <li>
               <a
                 href="pricing.html"
@@ -70,7 +109,7 @@
               </a>
             </li>
 
-            <li class="ms-auto">
+            <li class="lg:ms-auto">
               <a
                 href="contact.html"
                 class="inline-flex items-center justify-center gap-1 bg-white text-slate-900 w-28 h-10 font-inter font-semibold text-sm group transition-all duration-300 before:ease-in-out relative overflow-hidden before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:translate-x-20 before:rotate-45 before:bg-neutral-600 before:duration-300 hover:text-white hover:bg-neutral-600 hover:before:h-64 hover:before:-translate-y-32"
@@ -97,115 +136,6 @@
           </ul>
 
           <!-- MOBILE MENU -->
-          <div class="lg:hidden">
-            <div class="collapse bg-base-100 border-base-300 border">
-              <input type="checkbox" />
-              <div class="collapse-title font-semibold">
-                How do I create an account?
-              </div>
-              <div class="collapse-content text-sm">
-                Click the "Sign Up" button in the top right corner and follow
-                the registration process.
-              </div>
-            </div>
-
-            <div class="drawer">
-              <!-- Drawer toggle checkbox -->
-              <input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
-
-              <div class="drawer-content">
-                <label
-                  for="my-drawer-1"
-                  class="swap swap-rotate cursor-pointer w-8 h-8 relative"
-                >
-                  <input type="checkbox" class="peer" />
-                  <!-- Hamburger icon -->
-                  <svg
-                    class="swap-off fill-current w-8 h-8 transition-transform duration-300 ease-in-out peer-checked:-rotate-45 peer-checked:scale-90"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
-                    />
-                  </svg>
-
-                  <!-- Close icon -->
-                  <svg
-                    class="swap-on fill-current w-8 h-8 transition-transform duration-300 ease-in-out peer-checked:rotate-0 peer-checked:scale-100"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <polygon
-                      points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
-                    />
-                  </svg>
-                </label>
-              </div>
-
-              <!-- Drawer side -->
-              <div class="drawer-side">
-                <label
-                  for="my-drawer-1"
-                  aria-label="close sidebar"
-                  class="drawer-overlay"
-                ></label>
-                <ul class="bg-(--dark) min-h-full w-80 p-4 flex flex-col gap-3">
-                  <li>
-                    <a
-                      href="about.html"
-                      class="inline-flex items-center justify-center text-white font-inter text-sm"
-                    >
-                      About us
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="services.html"
-                      class="inline-flex items-center justify-center text-white font-inter text-sm"
-                    >
-                      Services
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="pricing.html"
-                      class="inline-flex items-center justify-center text-white font-inter text-sm ripple-button"
-                    >
-                      Pricing
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="contact.html"
-                      class="inline-flex items-center justify-center gap-1 bg-white text-slate-900 w-28 h-10 font-inter font-semibold text-sm group transition-all duration-300 before:ease-in-out relative overflow-hidden before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:translate-x-20 before:rotate-45 before:bg-neutral-600 before:duration-300 hover:text-white hover:bg-neutral-600 hover:before:h-64 hover:before:-translate-y-32"
-                    >
-                      <span class="relative z-10">Contact</span>
-                      <span
-                        class="font-xs transition-all duration-300 ease-in-out group-hover:translate-x-1 relative z-10"
-                      >
-                        <svg
-                          width=" 14"
-                          height="14"
-                          viewBox="0 0 12 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M8.78117 5.33312L5.20517 1.75712L6.14784 0.814453L11.3332 5.99979L6.14784 11.1851L5.20517 10.2425L8.78117 6.66645H0.666504V5.33312H8.78117Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </nav>
       </div>
     </header>
@@ -220,6 +150,8 @@
 
     <!-- SCRIPTS -->
     <script src="assets/js/pageloader.js"></script>
+    <script src="assets/js/menu.js"></script>
+
     <!-- <script src="assets/js/copyright.js"></script> -->
   </body>
 </html>
