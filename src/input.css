@@ -8,11 +8,15 @@
   --font-inter: "Inter", sans-serif;
   --theme: #4c4c4c;
   --dark: #0c0407;
+  --line-height: 100%;
+  --letter-spacing-ls-1: -0.01rem;
 }
 
 html,
 body {
   font-family: var(--font-poppins);
   background-color: var(--dark);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing-ls-1);
   overflow-x: hidden;
 }
