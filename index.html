@@ -53,9 +53,9 @@
     <!-- PRELOADER-END -->
 
     <!-- HEADER-SECTION-START -->
-    <header class="w-full h-screen lg:h-20">
-      <div class="max-w-7xl mx-auto lg:h-full">
-        <nav class="flex items-center justify-between relative px-5">
+    <header class="w-full ralative h-20">
+      <div class="max-w-7xl mx-auto h-full">
+        <nav class="flex items-center justify-between relative px-5 h-full">
           <!-- BRAND-LOGO -->
           <a
             href="index.html"
@@ -72,7 +72,7 @@
           <button
             type="button"
             id="open-menu-btn"
-            class="cursor-pointer bg-white text-sm font-medium text-black w-10 h-10 flex items-center justify-center transition-all duration-300 font-inter lg:hidden"
+            class="bg-white text-(--dark) cursor-pointer text-sm font-inter font-medium w-10 h-10 flex items-center justify-center text-center transition-all duration-400 ease-in lg:hidden"
           >
             <!-- OPEN-ICON -->
             <span class="open">
@@ -107,78 +107,158 @@
           </button>
 
           <!-- MAIN-MENU -->
-          <ul
-            class="menulist w-full lg:w-auto hidden lg:flex items-center justify-center gap-4 flex-1 absolute top-22 left-0 lg:top-0 border-t border-gray-400 lg:border-t-0 lg:relative z-10 space-y-4 lg:space-y-0 px-4 lg:px-0 pt-4 lg:pt-0"
-          >
-            <li class="lg:ms-auto">
-              <a
-                href="about.html"
-                class="inline-flex items-center justify-center text-white font-inter text-sm"
-              >
-                About us
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="services.html"
-                class="inline-flex items-center justify-center text-white font-inter text-sm"
-              >
-                Services
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="projects.html"
-                class="inline-flex items-center justify-center text-white font-inter text-sm"
-              >
-                Projects
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="pricing.html"
-                class="inline-flex items-center justify-center text-white font-inter text-sm ripple-button"
-              >
-                Pricing
-              </a>
-            </li>
-
-            <li class="lg:ms-auto">
-              <a
-                href="contact.html"
-                class="inline-flex items-center justify-center gap-1 bg-white text-slate-900 w-28 h-10 font-inter font-semibold text-sm group transition-all duration-300 before:ease-in-out relative overflow-hidden before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:translate-x-20 before:rotate-45 before:bg-neutral-600 before:duration-300 hover:text-white hover:bg-neutral-600 hover:before:h-64 hover:before:-translate-y-32"
-              >
-                <span class="relative z-10">Contact</span>
-                <span
-                  class="font-xs transition-all duration-300 ease-in-out group-hover:translate-x-1 relative z-10"
+          <div class="hidden lg:flex flex-1">
+            <ul class="w-full flex items-center justify-center gap-4">
+              <li class="ms-auto">
+                <a
+                  href="about.html"
+                  class="inline-flex items-center justify-center text-white font-inter text-sm"
                 >
-                  <svg
-                    width=" 14"
-                    height="14"
-                    viewBox="0 0 12 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                  About us
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="services.html"
+                  class="inline-flex items-center justify-center text-white font-inter text-sm"
+                >
+                  Services
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="projects.html"
+                  class="inline-flex items-center justify-center text-white font-inter text-sm"
+                >
+                  Projects
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="pricing.html"
+                  class="inline-flex items-center justify-center text-white font-inter text-sm ripple-button"
+                >
+                  Pricing
+                </a>
+              </li>
+
+              <li class="ms-auto">
+                <a
+                  href="contact.html"
+                  class="inline-flex items-center justify-center gap-1 bg-white text-slate-900 w-28 h-10 font-inter font-semibold text-sm group transition-all duration-300 before:ease-in-out relative overflow-hidden before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:translate-x-20 before:rotate-45 before:bg-neutral-600 before:duration-300 hover:text-white hover:bg-neutral-600 hover:before:h-64 hover:before:-translate-y-32"
+                >
+                  <span class="relative z-10">Contact</span>
+                  <span
+                    class="font-xs transition-all duration-300 ease-in-out group-hover:translate-x-1 relative z-10"
                   >
-                    <path
-                      d="M8.78117 5.33312L5.20517 1.75712L6.14784 0.814453L11.3332 5.99979L6.14784 11.1851L5.20517 10.2425L8.78117 6.66645H0.666504V5.33312H8.78117Z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </span>
-              </a>
-            </li>
-          </ul>
+                    <svg
+                      width=" 14"
+                      height="14"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.78117 5.33312L5.20517 1.75712L6.14784 0.814453L11.3332 5.99979L6.14784 11.1851L5.20517 10.2425L8.78117 6.66645H0.666504V5.33312H8.78117Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
+
+      <!-- MOBILE-MENU -->
+      <nav
+        class="bg-(--dark) w-full hidden absolute top-20.25 left-0 z-40 menulist pb-4"
+      >
+        <ul
+          class="bg-(--dark) w-full flex flex-col gap-4 items-start justify-center border-t border-gray-400 p-4"
+        >
+          <li>
+            <a
+              href="about.html"
+              class="inline-flex items-center justify-center text-white font-inter text-sm"
+            >
+              About us
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="services.html"
+              class="inline-flex items-center justify-center text-white font-inter text-sm"
+            >
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="projects.html"
+              class="inline-flex items-center justify-center text-white font-inter text-sm"
+            >
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="pricing.html"
+              class="inline-flex items-center justify-center text-white font-inter text-sm ripple-button"
+            >
+              Pricing
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="contact.html"
+              class="inline-flex items-center justify-center gap-1 bg-white text-slate-900 w-28 h-10 font-inter font-semibold text-sm group transition-all duration-300 before:ease-in-out relative overflow-hidden before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:translate-x-20 before:rotate-45 before:bg-neutral-600 before:duration-300 hover:text-white hover:bg-neutral-600 hover:before:h-64 hover:before:-translate-y-32"
+            >
+              <span class="relative z-10">Contact</span>
+              <span
+                class="font-xs transition-all duration-300 ease-in-out group-hover:translate-x-1 relative z-10"
+              >
+                <svg
+                  width=" 14"
+                  height="14"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.78117 5.33312L5.20517 1.75712L6.14784 0.814453L11.3332 5.99979L6.14784 11.1851L5.20517 10.2425L8.78117 6.66645H0.666504V5.33312H8.78117Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- HEADER-SECTION-END -->
 
     <!-- HERO-SECTION -->
     <section>
-      <div class="max-w-7xl mx-auto"></div>
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col">
+          <div class="flex items-center justify-start">
+            <h1 class="primary-heading">We’re</h1>
+          </div>
+
+          <div class="flex items-center justify-end">
+            <h1 class="primary-heading">Creative</h1>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- HERO-SECTION -->
 

@@ -1,15 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "tailwindcss";
-@plugin "daisyui";
 
 @theme {
   --font-poppins: "Poppins", sans-serif;
   --font-inter: "Inter", sans-serif;
-  --theme: #4c4c4c;
-  --dark: #0c0407;
-  --line-height: 100%;
-  --letter-spacing-ls-1: -0.01rem;
+
+  --theme: oklch(41.654% 0.00005 271.152);
+  --dark: oklch(12.431% 0.01995 352.011);
+  --white-20: oklch(100% 0.00011 271.152 / 0.2);
+  --light: oklch(12.431% 0.01995 352.011 / 0.4);
+
+  /* HEADING-FONT-SIZE */
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
+  --fs-24: 1.5rem;
+  --fs-26: 1.625rem;
+  --fs-28: 1.75rem;
+  --fs-30: 1.875rem;
+  --fs-32: 2rem;
+  --fs-34: 2.125rem;
+  --fs-36: 2.25rem;
+  --fs-40: 2.5rem;
+  --fs-44: 2.75rem;
+  --fs-48: 3rem;
+  --fs-50: 3.125rem;
+  --fs-60: 3.75rem;
+  --fs-64: 4rem;
+  --fs-68: 4.25rem;
+  --fs-72: 4.5rem;
+  --fs-76: 4.75rem;
+  --fs-80: 5rem;
+  --fs-96: 6rem;
+  --fs-100: 6.25rem;
+  --fs-110: 6.25rem;
+  --fs-200: 12.5rem;
+
+  --lh-80: 80%;
+  --lh-90: 90%;
+  --lh-100: 100%;
+  --lh-110: 110%;
+  --lh-120: 120%;
+  --lh-140: 140%;
+  --lh-150: 150%;
+
+  --ls-2: -0.02rem;
+  --ls-3: -0.03rem;
+  --ls-4: -0.04rem;
+  --ls-5: -0.05rem;
+  --ls-6: -0.06rem;
+  --ls-8: -0.08rem;
+  --ls-10: -0.1rem;
+
+  --capitilize: capitalize;
+  --uppercase: uppercase;
 }
 
 html,
@@ -20,3 +67,34 @@ body {
   letter-spacing: var(--letter-spacing-ls-1);
   overflow-x: hidden;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
+}
+
+@layer base {
+  .primary-heading {
+    font-size: var(--fs-40);
+    line-height: var(--lh-90);
+    letter-spacing: (--ls-5);
+    text-transform: var(--uppercase);
+
+    @media (width >= 48rem) {
+      font-size: var(--fs-100);
+      line-height: var(--lh-80);
+    }
+
+    @media (width >= 64rem) {
+      font-size: var(--fs-200);
+      line-height: var(--lh-90);
+      letter-spacing: var(--ls-10);
+    }
+  }
+}
+
+@plugin "daisyui";
