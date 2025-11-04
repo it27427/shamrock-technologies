@@ -72,38 +72,19 @@
           <button
             type="button"
             id="open-menu-btn"
-            class="bg-white text-(--dark) cursor-pointer text-sm font-inter font-medium w-10 h-10 flex items-center justify-center text-center transition-all duration-400 ease-in lg:hidden"
+            class="bg-white text-(--dark) cursor-pointer w-10 h-10 flex flex-col items-center justify-center space-y-1.25 transition-all duration-400 ease-in lg:hidden relative z-50"
           >
-            <!-- OPEN-ICON -->
-            <span class="open">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-                />
-              </svg>
-            </span>
+            <div
+              class="nav-bar-line w-5 h-0.5 bg-current transition-transform duration-300 ease-in-out origin-center nav-bar-1"
+            ></div>
 
-            <!-- CLOSE-ICON -->
-            <span class="hidden close">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-                />
-              </svg>
-            </span>
+            <div
+              class="nav-bar-line w-5 h-0.5 bg-current transition-all duration-300 ease-in-out origin-center nav-bar-2"
+            ></div>
+
+            <div
+              class="nav-bar-line w-5 h-0.5 bg-current transition-transform duration-300 ease-in-out origin-center nav-bar-3"
+            ></div>
           </button>
 
           <!-- MAIN-MENU -->
@@ -176,10 +157,10 @@
 
       <!-- MOBILE-MENU -->
       <nav
-        class="bg-(--dark) w-full hidden absolute top-20.25 left-0 z-40 menulist pb-4"
+        class="bg-(--dark) w-full absolute top-20.25 left-0 z-40 menulist pb-4 transition-[transform,opacity] duration-500 ease-in-out"
       >
         <ul
-          class="bg-(--dark) w-full flex flex-col gap-4 items-start justify-center border-t border-gray-400 p-4"
+          class="bg-(--dark) w-full flex flex-col gap-4 items-start justify-center border-t border-gray-600 p-4"
         >
           <li>
             <a
