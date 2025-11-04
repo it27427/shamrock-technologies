@@ -3,6 +3,9 @@ const menulist = document.querySelector(".menulist");
 const openbtnnew = document.querySelector(".open");
 const closebtn = document.querySelector(".close");
 
+menulist.classList.add("menu-closed");
+menulist.classList.add("flex");
+
 openbtn.addEventListener("click", () => {
   menulist.classList.toggle("hidden");
   openbtnnew.classList.toggle("hidden");
