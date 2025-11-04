@@ -8,6 +8,7 @@
 
   --theme: oklch(41.654% 0.00005 271.152);
   --dark: oklch(12.431% 0.01995 352.011);
+  --deep: oklch(17.304% 0.00002 271.152);
   --white-20: oklch(100% 0.00011 271.152 / 0.2);
   --light: oklch(12.431% 0.01995 352.011 / 0.4);
 
@@ -54,6 +55,11 @@
   --ls-6: -0.06rem;
   --ls-8: -0.08rem;
   --ls-10: -0.1rem;
+  --ls-11: -0.2rem;
+  --ls-12: -0.3rem;
+  --ls-13: -0.4rem;
+  --ls-14: -0.5rem;
+  --ls-15: -1.25rem;
 
   --capitilize: capitalize;
   --uppercase: uppercase;
@@ -92,7 +98,7 @@ h6 {
   .primary-heading {
     font-size: var(--fs-40);
     line-height: var(--lh-90);
-    letter-spacing: (--ls-5);
+    letter-spacing: var(--ls-5);
     text-transform: var(--uppercase);
 
     @media (width >= 48rem) {
@@ -103,7 +109,7 @@ h6 {
     @media (width >= 64rem) {
       font-size: var(--fs-200);
       line-height: var(--lh-90);
-      letter-spacing: var(--ls-10);
+      letter-spacing: var(--ls-15);
     }
   }
 }
@@ -125,11 +131,13 @@ h6 {
   .menu-closed {
     transform: translateY(10%);
     opacity: 0;
+    visibility: hidden;
   }
 
   .menu-open {
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
   }
 }
 
