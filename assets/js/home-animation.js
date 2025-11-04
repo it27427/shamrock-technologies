@@ -1,14 +1,14 @@
-const firstHeading = document.querySelector(".first-heading");
-const secondHeading = document.querySelector(".second-heading");
+const firstHeadings = document.querySelectorAll(".first-heading");
+const secondHeadings = document.querySelectorAll(".second-heading");
 
-gsap.from(firstHeading, {
+gsap.from(firstHeadings, {
   xPercent: -30,
   opacity: 0,
   duration: 1.5,
   ease: "power3.out",
 });
 
-gsap.from(secondHeading, {
+gsap.from(secondHeadings, {
   xPercent: 30,
   opacity: 0,
   duration: 1.5,
