@@ -40,9 +40,11 @@
   --fs-72: 4.5rem;
   --fs-76: 4.75rem;
   --fs-80: 5rem;
+  --fs-90: 5.625rem;
+  --fs-92: 5.75rem;
   --fs-96: 6rem;
   --fs-100: 6.25rem;
-  --fs-110: 6.25rem;
+  --fs-110: 6.875rem;
   --fs-200: 12.5rem;
 
   --lh-80: 80%;
@@ -111,8 +113,9 @@ p {
     text-transform: var(--uppercase);
 
     @media (width >= 48rem) {
-      font-size: var(--fs-100);
+      font-size: var(--fs-110);
       line-height: var(--lh-80);
+      letter-spacing: var(--ls-14);
     }
 
     @media (width >= 64rem) {
