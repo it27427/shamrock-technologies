@@ -252,7 +252,9 @@
         <div
           class="px-4 py-5 mt-5 flex flex-col md:flex-row justify-between items-center space-y-6 lg:space-y-0 herotop"
         >
-          <ul class="uppercase md:flex md:flex-col hidden">
+          <ul
+            class="uppercase md:flex md:flex-col hidden font-(--font-poppins)"
+          >
             <li class="text-white text-sm poppins-semibold font-bold">
               <span class="text-(--whitedeam)">Grow </span>Your
             </li>
@@ -274,7 +276,9 @@
             </div>
           </div>
 
-          <ul class="uppercase md:flex md:flex-col hidden">
+          <ul
+            class="uppercase md:flex md:flex-col hidden font-(--font-poppins)"
+          >
             <li class="text-white text-sm poppins-semibold font-bold">
               <span class="text-(--whitedeam)">Working </span>
             </li>
@@ -294,11 +298,115 @@
     </section>
     <!-- HERO-SECTION -->
 
-    <!-- BRAND-SECTION -->
+    <!-- HOME-ABOUT-SECTION -->
     <section class="pt-20 pb-10 md:pt-40 md:pb-20 bg-white">
-      <div class="max-w-7xl mx-auto"></div>
+      <div class="max-w-7xl mx-auto">
+        <hgroup
+          class="flex flex-col items-center justify-center gap-6 max-w-4xl mx-auto text-center mb-10 md:mb-20"
+        >
+          <h5
+            class="text-(--black) uppercase text-sm leading-3.5 font-semibold subtitle"
+          >
+            About our Agency
+          </h5>
+
+          <h2 class="main-heading text-(--black)">
+            <span class="text-(--blacken)">Designing unique</span> solutions to
+            help brands stand out & thrive in a competitive
+            <span class="text-(--blacken)">digital landscape</span>
+          </h2>
+        </hgroup>
+
+        <div
+          class="flex flex-col gap-10 items-start justify-center md:flex-row md:gap-20"
+        >
+          <div
+            class="flex items-center justify-center overflow-hidden w-full md:max-w-146.5 about-thumb"
+          >
+            <img
+              src="assets/images/about/home-about.webp"
+              alt="ABOUT-THUMBNAIL"
+              class="max-w-full"
+            />
+          </div>
+
+          <div class="flex flex-col gap-5 md:gap-28">
+            <div class="w-full md:max-w-140 textbox">
+              <p class="text-(--text-primary) text-body">
+                We specialize in crafting unique solutions that help brands make
+                their mark. By combining creativity with strategy, we deliver
+                designs that stand out in the digital landscape and resonate
+                with audiences, ensuring your brand
+              </p>
+            </div>
+
+            <div class="flex items-center gap-10 md:gap-20 counterbox">
+              <div class="flex flex-col gap-2">
+                <span class="text-(--black) counter-heading">
+                  <span
+                    class="counter transition-transform duration-500 ease-in inline-block"
+                    data-target="200"
+                  >
+                    0 </span
+                  >+
+                </span>
+                <span class="text-(--text-primary)"> Satisfied Clients </span>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <span class="text-(--black) counter-heading">
+                  <span
+                    class="counter transition-transform duration-500 ease-in inline-block"
+                    data-target="600"
+                  >
+                    0 </span
+                  >+
+                </span>
+                <span class="text-(--text-primary)"> Projects Done </span>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <span class="text-(--black) counter-heading">
+                  <span
+                    class="counter transition-transform duration-500 ease-in inline-block"
+                    data-target="200"
+                  >
+                    0 </span
+                  >M+
+                </span>
+                <span class="text-(--text-primary)"> Total Revenue </span>
+              </div>
+            </div>
+
+            <div class="flex items-center aboutbox">
+              <a
+                href="about.html"
+                class="inline-flex items-center justify-center gap-1 bg-(--black) text-white w-28 h-10 font-inter font-semibold text-sm group transition-all duration-300 before:ease-in-out relative overflow-hidden before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:translate-x-20 before:rotate-45 before:bg-neutral-600 before:duration-300 hover:text-white hover:bg-neutral-600 hover:before:h-64 hover:before:-translate-y-32"
+              >
+                <span class="relative z-10">About us</span>
+                <span
+                  class="font-xs transition-all duration-300 ease-in-out group-hover:translate-x-1 relative z-10"
+                >
+                  <svg
+                    width=" 14"
+                    height="14"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.78117 5.33312L5.20517 1.75712L6.14784 0.814453L11.3332 5.99979L6.14784 11.1851L5.20517 10.2425L8.78117 6.66645H0.666504V5.33312H8.78117Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- BRAND-SECTION -->
+    <!-- HOME-ABOUT-SECTION -->
 
     <!-- SERVICE-SECTION -->
     <section>
@@ -357,6 +465,7 @@
     <!-- SCRIPTS -->
     <script src="assets/js/pageloader.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/counter.js"></script>
 
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/slider.js"></script>

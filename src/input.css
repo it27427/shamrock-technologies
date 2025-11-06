@@ -12,6 +12,10 @@
   --white-20: oklch(100% 0.00011 271.152 / 0.2);
   --light: oklch(12.431% 0.01995 352.011 / 0.4);
   --whitedeam: rgba(255, 255, 255, 0.6);
+  --black: rgb(12, 4, 7);
+  --blacken: rgb(12, 4, 7, 0.4);
+  --light-gray: rgb(112, 112, 112);
+  --text-primary: rgb(76, 76, 76);
 
   /* HEADING-FONT-SIZE */
   --fs-12: 0.75rem;
@@ -79,10 +83,10 @@
 
 html,
 body {
-  font-family: var(--font-poppins);
+  font-family: var(--font-inter);
   background-color: var(--dark);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing-ls-1);
+  line-height: var(--lh-150);
+  letter-spacing: var(--ls-3);
   overflow-x: hidden;
 }
 
@@ -93,6 +97,10 @@ h4,
 h5,
 h6 {
   font-family: var(--font-poppins);
+}
+
+p {
+  line-height: var(--lh-150);
 }
 
 @layer base {
@@ -112,6 +120,24 @@ h6 {
       line-height: var(--lh-90);
       letter-spacing: var(--ls-15);
     }
+  }
+
+  .main-heading {
+    font-size: var(--fs-48);
+    line-height: var(--lh-110);
+    letter-spacing: var(--ls-3);
+    font-weight: 600;
+  }
+
+  .text-body {
+    font-size: var(--fs-20);
+  }
+
+  .counter-heading {
+    font-size: var(--fs-40);
+    font-weight: 600;
+    letter-spacing: var(--ls-4);
+    line-height: 1;
   }
 }
 
