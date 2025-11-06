@@ -182,6 +182,17 @@ p {
     letter-spacing: var(--ls-4);
     line-height: 1;
   }
+
+  .card-heading {
+    font-size: var(--fs-20);
+    font-weight: 600;
+    letter-spacing: var(--ls-4);
+    line-height: 1;
+
+    @media (width >= 48rem) {
+      font-size: var(--fs-40);
+    }
+  }
 }
 
 @layer utilities {
