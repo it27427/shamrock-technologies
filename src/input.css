@@ -133,6 +133,17 @@ p {
     }
   }
 
+  .brand-heading {
+    font-size: var(--fs-26);
+    line-height: var(--lh-110);
+    letter-spacing: var(--ls-3);
+    font-weight: 600;
+
+    @media (width >= 48rem) {
+      font-size: var(--fs-80);
+    }
+  }
+
   .text-body {
     font-size: var(--fs-20);
   }
