@@ -11,6 +11,7 @@
   --deep: oklch(17.304% 0.00002 271.152);
   --white-20: oklch(100% 0.00011 271.152 / 0.2);
   --light: oklch(12.431% 0.01995 352.011 / 0.4);
+  --whitedeam: rgba(255, 255, 255, 0.6);
 
   /* HEADING-FONT-SIZE */
   --fs-12: 0.75rem;
