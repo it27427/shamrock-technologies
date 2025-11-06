@@ -129,6 +129,10 @@ p {
     font-weight: 600;
 
     @media (width >= 48rem) {
+      font-size: var(--fs-32);
+    }
+
+    @media (width >= 63rem) {
       font-size: var(--fs-48);
     }
   }
@@ -140,6 +144,10 @@ p {
     font-weight: 600;
 
     @media (width >= 48rem) {
+      font-size: var(--fs-48);
+    }
+
+    @media (width >= 63rem) {
       font-size: var(--fs-80);
     }
   }

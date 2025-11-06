@@ -40,10 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "<"
       );
-
-      gsap.set(".videobox", {
-        paddingBottom: 80,
-      });
     }
   };
 
