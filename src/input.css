@@ -105,7 +105,7 @@ p {
 
 @layer base {
   .primary-heading {
-    font-size: var(--fs-40);
+    font-size: var(--fs-48);
     line-height: var(--lh-90);
     letter-spacing: var(--ls-5);
     text-transform: var(--uppercase);
@@ -123,10 +123,14 @@ p {
   }
 
   .main-heading {
-    font-size: var(--fs-48);
+    font-size: var(--fs-26);
     line-height: var(--lh-110);
     letter-spacing: var(--ls-3);
     font-weight: 600;
+
+    @media (width >= 48rem) {
+      font-size: var(--fs-48);
+    }
   }
 
   .text-body {
