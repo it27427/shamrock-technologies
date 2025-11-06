@@ -16,6 +16,8 @@
   --blacken: rgb(12, 4, 7, 0.4);
   --light-gray: rgb(112, 112, 112);
   --text-primary: rgb(76, 76, 76);
+  --icon-bg: oklch(100% 0.00011 271.152 / 0.102);
+  --card-border: oklab(100% 0 -0.00011 / 0.2);
 
   /* HEADING-FONT-SIZE */
   --fs-12: 0.75rem;
@@ -89,7 +91,6 @@ body {
   background-color: var(--dark);
   line-height: var(--lh-150);
   letter-spacing: var(--ls-3);
-  overflow-x: hidden;
 }
 
 h1,
@@ -137,6 +138,22 @@ p {
 
     @media (width >= 63rem) {
       font-size: var(--fs-48);
+    }
+  }
+
+  .main-title {
+    font-size: var(--fs-26);
+    line-height: var(--lh-110);
+    letter-spacing: var(--ls-3);
+    font-weight: 600;
+
+    @media (width >= 48rem) {
+      font-size: var(--fs-40);
+      letter-spacing: var(--ls-13);
+    }
+
+    @media (width >= 63rem) {
+      font-size: var(--fs-80);
     }
   }
 
