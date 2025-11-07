@@ -64,7 +64,7 @@ up({
   right: "1.25rem",
   width: "2.5rem",
   height: "2.5rem",
-  bg: "#333",
+  bg: "oklch(32.109% 0.00004 271.152)", //#333
   src: newIcon,
   whenShow: 400,
   circle: true,
