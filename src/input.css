@@ -9,6 +9,7 @@
   --theme: oklch(41.654% 0.00005 271.152);
   --dark: oklch(12.431% 0.01995 352.011);
   --deep: oklch(17.304% 0.00002 271.152);
+  --white: oklch(100% 0.00011 271.152);
   --white-20: oklch(100% 0.00011 271.152 / 0.2);
   --light: oklch(12.431% 0.01995 352.011 / 0.4);
   --whitedeam: rgba(255, 255, 255, 0.6);
@@ -83,6 +84,12 @@
   --breakpoint-3xl: 87.5rem;
   --breakpoint-4xl: 96rem;
   --breakpoint-5xl: 100rem;
+}
+
+::selection {
+  background-color: var(--theme);
+  color: var(--white);
+  font-weight: 600;
 }
 
 html,
