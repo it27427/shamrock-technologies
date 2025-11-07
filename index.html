@@ -51,10 +51,19 @@
   <body>
     <!-- PRELOADER-START -->
     <div
-      class="bg-(--dark) w-full h-screen flex items-center justify-center fixed top-0 left-0 z-huge"
+      class="bg-(--theme-primary-dark) w-dvw h-dvh flex items-center justify-center overflow-hidden fixed top-0 left-0 z-huge"
       id="preloader"
     >
-      <span class="loading loading-infinity loading-xl text-success"></span>
+      <div class="loader">
+        <div class="shamrock-loader">
+          <div class="loader-circle">
+            <div class="loader-inner-circle"></div>
+            <figure class="loadericon">
+              <img src="assets/images/logo/icon-white.png" alt="loader-icon" />
+            </figure>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- PRELOADER-END -->
 
@@ -80,7 +89,7 @@
           <button
             type="button"
             id="open-menu-btn"
-            class="bg-white text-(--dark) cursor-pointer w-10 h-10 flex flex-col items-center justify-center space-y-1.25 transition-all duration-400 ease-in lg:hidden relative z-20"
+            class="bg-(--theme-primary-light) text-(--theme-primary-dark) cursor-pointer w-10 h-10 flex flex-col items-center justify-center space-y-1.25 transition-all duration-400 ease-in lg:hidden relative z-20"
           >
             <div
               class="nav-bar-line w-5 h-0.5 bg-current transition-transform duration-500 ease-in origin-center nav-bar-1"
@@ -102,7 +111,7 @@
               <li class="ms-auto">
                 <a
                   href="about.html"
-                  class="inline-flex items-center justify-center text-white font-inter text-sm"
+                  class="inline-flex items-center justify-center text-white font-inter text-sm transition-colors duration-400 ease-in hover:text-green-200"
                 >
                   About us
                 </a>
@@ -112,7 +121,7 @@
               <li>
                 <a
                   href="services.html"
-                  class="inline-flex items-center justify-center text-white font-inter text-sm"
+                  class="inline-flex items-center justify-center text-white font-inter text-sm transition-colors duration-400 ease-in hover:text-green-200"
                 >
                   Services
                 </a>
@@ -122,7 +131,7 @@
               <li>
                 <a
                   href="projects.html"
-                  class="inline-flex items-center justify-center text-white font-inter text-sm"
+                  class="inline-flex items-center justify-center text-white font-inter text-sm transition-colors duration-400 ease-in hover:text-green-200"
                 >
                   Projects
                 </a>
@@ -132,7 +141,7 @@
               <li>
                 <a
                   href="pricing.html"
-                  class="inline-flex items-center justify-center text-white font-inter text-sm ripple-button"
+                  class="inline-flex items-center justify-center text-white font-inter text-sm ripple-button transition-colors duration-400 ease-in hover:text-green-200"
                 >
                   Pricing
                 </a>
@@ -142,20 +151,20 @@
               <li class="ms-auto">
                 <a
                   href="contact.html"
-                  class="relative inline-flex items-center justify-center overflow-hidden bg-white w-28 h-10 text-sm font-semibold text-neutral-600 transition-colors duration-300 group"
+                  class="relative inline-flex items-center justify-center overflow-hidden bg-green-50 w-28 h-10 text-sm font-semibold text-(--theme-primary) transition-colors duration-300 group"
                 >
                   <!-- Background Hover Shapes -->
                   <span
-                    class="absolute top-0 left-0 bg-neutral-600 rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                    class="absolute top-0 left-0 bg-(--theme-primary) rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
                   ></span>
 
                   <span
-                    class="absolute bottom-0 right-0 bg-neutral-600 rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                    class="absolute bottom-0 right-0 bg-(--theme-primary) rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
                   ></span>
 
                   <!-- Button Content -->
                   <span
-                    class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-white"
+                    class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-green-50"
                   >
                     <span>Contact</span>
 
@@ -213,7 +222,7 @@
           <li class="w-full">
             <a
               href="about.html"
-              class="inline-flex items-center justify-start text-white font-inter text-sm w-full p-2"
+              class="inline-flex items-center justify-start text-white font-inter text-sm w-full p-2 transition-colors duration-400 ease-in hover:text-green-200"
             >
               About us
             </a>
@@ -223,7 +232,7 @@
           <li class="w-full">
             <a
               href="services.html"
-              class="inline-flex items-center justify-start text-white font-inter text-sm w-full p-2"
+              class="inline-flex items-center justify-start text-white font-inter text-sm w-full p-2 transition-colors duration-400 ease-in hover:text-green-200"
             >
               Services
             </a>
@@ -233,7 +242,7 @@
           <li class="w-full">
             <a
               href="projects.html"
-              class="inline-flex items-center justify-start text-white font-inter text-sm w-full p-2"
+              class="inline-flex items-center justify-start text-white font-inter text-sm w-full p-2 transition-colors duration-400 ease-in hover:text-green-200"
             >
               Projects
             </a>
@@ -243,7 +252,7 @@
           <li class="w-full">
             <a
               href="pricing.html"
-              class="inline-flex items-center justify-start text-white font-inter text-sm ripple-button w-full p-2 mb-2"
+              class="inline-flex items-center justify-start text-white font-inter text-sm ripple-button w-full p-2 mb-2 transition-colors duration-400 ease-in hover:text-green-200"
             >
               Pricing
             </a>
@@ -253,20 +262,20 @@
           <li class="w-full">
             <a
               href="contact.html"
-              class="relative inline-flex items-center justify-center overflow-hidden bg-white w-28 h-10 text-sm font-semibold text-neutral-600 transition-colors duration-300 group"
+              class="relative inline-flex items-center justify-center overflow-hidden bg-green-50 w-28 h-10 text-sm font-semibold text-(--theme-primary) transition-colors duration-300 group"
             >
               <!-- Background Hover Shapes -->
               <span
-                class="absolute top-0 left-0 bg-neutral-600 rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                class="absolute top-0 left-0 bg-(--theme-primary) rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
               ></span>
 
               <span
-                class="absolute bottom-0 right-0 bg-neutral-600 rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                class="absolute bottom-0 right-0 bg-(--theme-primary) rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
               ></span>
 
               <!-- Button Content -->
               <span
-                class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-white"
+                class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-(--theme-primary-light)"
               >
                 <span>Contact</span>
 

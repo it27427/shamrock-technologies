@@ -20,6 +20,10 @@
   --icon-bg: oklch(100% 0.00011 271.152 / 0.102);
   --card-border: oklab(100% 0 -0.00011 / 0.2);
 
+  --theme-primary-light: oklch(98.2% 0.018 155.826);
+  --theme-primary: oklch(46.399% 0.12386 143.916);
+  --theme-primary-dark: oklch(37.345% 0.08668 143.619);
+
   /* HEADING-FONT-SIZE */
   --fs-12: 0.75rem;
   --fs-14: 0.875rem;
@@ -87,8 +91,8 @@
 }
 
 ::selection {
-  background-color: var(--theme);
-  color: var(--white);
+  background-color: var(--theme-primary-dark);
+  color: var(--theme-primary-light);
   font-weight: 600;
 }
 
@@ -222,6 +226,69 @@ p {
 
     @media (width >= 48rem) {
       font-size: var(--fs-32);
+    }
+  }
+
+  .shamrock-loader {
+    width: 7.8125rem;
+    height: 7.8125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .loader-circle {
+    position: relative;
+    border: solid 0.25rem var(--theme-primary-light);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .loader-inner-circle {
+    position: absolute;
+    left: -12.5%;
+    top: 35%;
+    width: 125%;
+    height: 25%;
+    background: var(--theme-primary-dark);
+    animation: rotate 2s infinite linear;
+  }
+
+  .loadericon {
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    animation: pulsate 1.25s infinite ease;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes pulsate {
+    0% {
+      transform: scale(0.75);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(0.75);
     }
   }
 }
