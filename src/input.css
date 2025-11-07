@@ -207,6 +207,10 @@ p {
 }
 
 @layer utilities {
+  .z-huge {
+    z-index: 999999;
+  }
+
   .is-open .nav-bar-1 {
     transform: translate3d(0, 0.4375rem, 0) rotateZ(45deg);
   }
@@ -220,16 +224,33 @@ p {
     transform: translate3d(0, -0.4375rem, 0) rotateZ(-45deg);
   }
 
+  #header {
+    transition: transform 500ms ease-in-out;
+    will-change: transform;
+    z-index: 999;
+  }
+
+  #header.sticky-header {
+    position: sticky;
+    top: 0;
+    transform: translateY(0);
+  }
+
+  #header.hide-header {
+    transform: translateY(-100%);
+  }
+
+  .mobilemenu {
+    @apply absolute top-20 left-0 z-30 transition-[transform,opacity] duration-500 ease-in;
+    will-change: transform, opacity;
+  }
+
   .menu-closed {
-    transform: translateY(10%);
-    opacity: 0;
-    visibility: hidden;
+    @apply translate-y-20 opacity-0 invisible;
   }
 
   .menu-open {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
+    @apply translate-y-0 opacity-100 visible;
   }
 }
 

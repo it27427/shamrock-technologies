@@ -51,7 +51,7 @@
   <body>
     <!-- PRELOADER-START -->
     <div
-      class="w-full h-screen flex items-center justify-center fixed top-0 left-0 z-50 bg-(--dark)"
+      class="bg-(--dark) w-full h-screen flex items-center justify-center fixed top-0 left-0 z-huge"
       id="preloader"
     >
       <span class="loading loading-infinity loading-xl text-success"></span>
@@ -59,7 +59,7 @@
     <!-- PRELOADER-END -->
 
     <!-- HEADER-SECTION-START -->
-    <header class="w-full ralative h-20">
+    <header id="header" class="bg-(--dark) relative w-full h-20">
       <div class="max-w-7xl mx-auto h-full">
         <nav
           class="flex items-center justify-between relative px-5 lg:px-0 h-full"
@@ -80,18 +80,18 @@
           <button
             type="button"
             id="open-menu-btn"
-            class="bg-white text-(--dark) cursor-pointer w-10 h-10 flex flex-col items-center justify-center space-y-1.25 transition-all duration-400 ease-in lg:hidden relative z-50"
+            class="bg-white text-(--dark) cursor-pointer w-10 h-10 flex flex-col items-center justify-center space-y-1.25 transition-all duration-400 ease-in lg:hidden relative z-20"
           >
             <div
-              class="nav-bar-line w-5 h-0.5 bg-current transition-transform duration-300 ease-in-out origin-center nav-bar-1"
+              class="nav-bar-line w-5 h-0.5 bg-current transition-transform duration-500 ease-in origin-center nav-bar-1"
             ></div>
 
             <div
-              class="nav-bar-line w-5 h-0.5 bg-current transition-all duration-300 ease-in-out origin-center nav-bar-2"
+              class="nav-bar-line w-5 h-0.5 bg-current transition-all duration-500 ease-out origin-center nav-bar-2"
             ></div>
 
             <div
-              class="nav-bar-line w-5 h-0.5 bg-current transition-transform duration-300 ease-in-out origin-center nav-bar-3"
+              class="nav-bar-line w-5 h-0.5 bg-current transition-transform duration-500 ease-in origin-center nav-bar-3"
             ></div>
           </button>
 
@@ -205,9 +205,7 @@
       </div>
 
       <!-- MOBILE-MENU -->
-      <nav
-        class="bg-(--dark) w-full absolute top-20.25 left-0 z-40 menulist pb-4 transition-[transform,opacity] duration-500 ease-in-out"
-      >
+      <nav class="bg-(--dark) hidden mobilemenu w-full pb-4">
         <ul
           class="bg-(--dark) w-full flex flex-col items-start justify-center border-t border-gray-600 p-4"
         >
@@ -1259,6 +1257,7 @@
     <!-- SCRIPTS -->
     <script src="assets/js/pageloader.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/sticky-header.js"></script>
     <script src="assets/js/counter.js"></script>
 
     <script src="assets/js/backtotop.js"></script>
