@@ -205,7 +205,7 @@
       </div>
 
       <!-- MOBILE-MENU -->
-      <nav class="bg-(--dark) hidden mobilemenu w-full pb-4">
+      <nav class="hidden mobilemenu w-full pb-4">
         <ul
           class="bg-(--dark) w-full flex flex-col items-start justify-center border-t border-gray-600 p-4"
         >
@@ -467,7 +467,7 @@
         </hgroup>
 
         <div
-          class="flex flex-col gap-10 items-start justify-center lg:flex-row lg:gap-20"
+          class="flex flex-col gap-10 items-start justify-center lg:flex-row lg:gap-20 w-full"
         >
           <div
             class="flex items-center justify-center overflow-hidden w-full lg:max-w-146.5 about-thumb group"
@@ -479,7 +479,7 @@
             />
           </div>
 
-          <div class="flex flex-col gap-5 lg:gap-28">
+          <div class="flex flex-col gap-5 lg:gap-28 w-full">
             <div class="w-full lg:max-w-140 textbox">
               <p class="text-(--text-primary) font-sm md:text-body">
                 We specialize in crafting unique solutions that help brands make
@@ -489,8 +489,10 @@
               </p>
             </div>
 
-            <div class="flex items-center gap-5 lg:gap-20 flex-wrap counterbox">
-              <div class="flex flex-col gap-2">
+            <div
+              class="flex items-center flex-wrap md:flex-nowrap gap-5 lg:gap-20 w-full max-w-full counterbox min-h-25"
+            >
+              <div class="counter-item">
                 <span class="text-(--black) counter-heading">
                   <span
                     class="counter transition-transform duration-500 ease-in inline-block"
@@ -502,7 +504,7 @@
                 <span class="text-(--text-primary)"> Satisfied Clients </span>
               </div>
 
-              <div class="flex flex-col gap-2">
+              <div class="counter-item">
                 <span class="text-(--black) counter-heading">
                   <span
                     class="counter transition-transform duration-500 ease-in inline-block"
@@ -514,7 +516,7 @@
                 <span class="text-(--text-primary)"> Projects Done </span>
               </div>
 
-              <div class="flex flex-col gap-2">
+              <div class="counter-item">
                 <span class="text-(--black) counter-heading">
                   <span
                     class="counter transition-transform duration-500 ease-in inline-block"
