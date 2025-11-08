@@ -5,6 +5,13 @@ const swiper = new Swiper(".testimonialSlider", {
 
   speed: 5000,
   allowTouchMove: false,
+  freeMode: true,
+  centerInsufficientSlides: true,
+  centeredSlidesBounds: true,
+  controller: {
+    inverse: true,
+  },
+
   // loop: true,
 
   slidesPerView: 1,
