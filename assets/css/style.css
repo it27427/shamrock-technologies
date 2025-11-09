@@ -10,6 +10,7 @@
       "Courier New", monospace;
     --color-green-50: oklch(98.2% 0.018 155.826);
     --color-green-200: oklch(92.5% 0.084 155.995);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-neutral-600: oklch(43.9% 0 0);
     --color-black: #000;
@@ -23,6 +24,8 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-medium: 500;
@@ -49,6 +52,7 @@
     --white-60: oklch(91.887% 0.0001 271.152);
     --whitedeam: rgba(255, 255, 255, 0.6);
     --black: rgb(12, 4, 7);
+    --black-70: oklch(0% 0 0 / 0.702);
     --blacken: rgb(12, 4, 7, 0.4);
     --light-gray: rgb(112, 112, 112);
     --text-primary: rgb(76, 76, 76);
@@ -73,7 +77,7 @@
     --lh-150: 150%;
     --ls-3: -0.03rem;
     --ls-4: -0.04rem;
-    --ls-5: -0.05rem;
+    --ls-11: -0.2rem;
     --ls-13: -0.4rem;
     --ls-14: -0.5rem;
     --ls-15: -1.25rem;
@@ -1566,6 +1570,9 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
@@ -1589,28 +1596,6 @@
   }
   .mb-24 {
     margin-bottom: calc(var(--spacing) * 24);
-  }
-  .badge {
-    @layer daisyui.component {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: calc(0.25rem * 2);
-      border-radius: var(--radius-selector);
-      vertical-align: middle;
-      color: var(--badge-fg);
-      border: var(--border) solid var(--badge-color, var(--color-base-200));
-      font-size: 0.875rem;
-      width: fit-content;
-      padding-inline: calc(0.25rem * 3 - var(--border));
-      background-size: auto, calc(var(--noise) * 100%);
-      background-image: none, var(--fx-noise);
-      background-color: var(--badge-bg);
-      --badge-bg: var(--badge-color, var(--color-base-100));
-      --badge-fg: var(--color-base-content);
-      --size: calc(var(--size-selector, 0.25rem) * 6);
-      height: var(--size);
-    }
   }
   .block {
     display: block;
@@ -1668,6 +1653,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .max-h-0 {
+    max-height: calc(var(--spacing) * 0);
   }
   .min-h-24 {
     min-height: calc(var(--spacing) * 24);
@@ -1889,6 +1877,13 @@
       margin-block-end: calc(calc(var(--spacing) * 1.25) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -1915,6 +1910,9 @@
   }
   .border-\(--white-60\) {
     border-color: var(--white-60);
+  }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
   }
   .border-gray-600 {
     border-color: var(--color-gray-600);
@@ -1991,6 +1989,9 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
@@ -2045,6 +2046,10 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .text-\[1\.25rem\] {
     font-size: 1.25rem;
   }
@@ -2072,11 +2077,11 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
-  .text-wrap {
-    text-wrap: wrap;
-  }
   .text-\(--black\) {
     color: var(--black);
+  }
+  .text-\(--black-70\) {
+    color: var(--black-70);
   }
   .text-\(--blacken\) {
     color: var(--blacken);
@@ -2421,6 +2426,12 @@
       padding-bottom: calc(var(--spacing) * 17.5);
     }
   }
+  .md\:text-2xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
   .lg\:sticky {
     @media (width >= 62rem) {
       position: sticky;
@@ -2461,6 +2472,11 @@
       max-width: calc(var(--spacing) * 98.75);
     }
   }
+  .lg\:max-w-109\.5 {
+    @media (width >= 62rem) {
+      max-width: calc(var(--spacing) * 109.5);
+    }
+  }
   .lg\:max-w-122 {
     @media (width >= 62rem) {
       max-width: calc(var(--spacing) * 122);
@@ -2489,6 +2505,11 @@
   .lg\:max-w-149\.75 {
     @media (width >= 62rem) {
       max-width: calc(var(--spacing) * 149.75);
+    }
+  }
+  .lg\:max-w-161 {
+    @media (width >= 62rem) {
+      max-width: calc(var(--spacing) * 161);
     }
   }
   .lg\:max-w-166 {
@@ -2586,11 +2607,6 @@
       padding-block: calc(var(--spacing) * 22);
     }
   }
-  .lg\:py-24 {
-    @media (width >= 62rem) {
-      padding-block: calc(var(--spacing) * 24);
-    }
-  }
   .lg\:py-32 {
     @media (width >= 62rem) {
       padding-block: calc(var(--spacing) * 32);
@@ -2639,7 +2655,7 @@ p {
   .primary-heading {
     font-size: var(--fs-48);
     line-height: var(--lh-90);
-    letter-spacing: var(--ls-5);
+    letter-spacing: var(--ls-11);
     text-transform: var(--uppercase);
     @media (width >= 48rem) {
       font-size: var(--fs-110);
@@ -2665,10 +2681,13 @@ p {
     }
   }
   .main-title {
-    font-size: var(--fs-26);
+    font-size: var(--fs-20);
     line-height: var(--lh-110);
     letter-spacing: var(--ls-3);
     font-weight: 600;
+    @media (width >= 30rem) {
+      font-size: var(--fs-26);
+    }
     @media (width >= 48rem) {
       font-size: var(--fs-40);
     }
@@ -2709,7 +2728,10 @@ p {
     line-height: 1;
     display: flex;
     align-items: center;
-    min-width: 10rem;
+    min-width: 9rem;
+    @media (width >= 30rem) {
+      min-width: 10rem;
+    }
   }
   .counter-item {
     display: flex;
@@ -2717,7 +2739,10 @@ p {
     gap: calc(var(--spacing) * 2);
     text-align: left;
     width: calc((100% / 2) - 1.25rem);
-    min-width: 10rem;
+    min-width: 9rem;
+    @media (width >= 30rem) {
+      min-width: 10rem;
+    }
     @media (width >= 48rem) {
       width: calc((100% / 3) - 5rem);
     }
@@ -2807,6 +2832,31 @@ p {
     position: relative;
     top: 0;
     animation: pulsate 1.25s infinite ease;
+  }
+  .faq-icon {
+    z-index: 1;
+    flex: none;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+  }
+  .faq-icon-plus {
+    background-color: var(--dark);
+    width: 0.125rem;
+    height: 100%;
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+  }
+  .faq-icon-minus {
+    background-color: var(--dark);
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
   }
   @keyframes rotate {
     0% {

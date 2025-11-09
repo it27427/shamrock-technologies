@@ -19,6 +19,7 @@
   --light: oklch(12.431% 0.01995 352.011 / 0.4);
   --whitedeam: rgba(255, 255, 255, 0.6);
   --black: rgb(12, 4, 7);
+  --black-70: oklch(0% 0 0 / 0.702);
   --blacken: rgb(12, 4, 7, 0.4);
   --light-gray: rgb(112, 112, 112);
   --text-primary: rgb(76, 76, 76);
@@ -124,7 +125,7 @@ p {
   .primary-heading {
     font-size: var(--fs-48);
     line-height: var(--lh-90);
-    letter-spacing: var(--ls-5);
+    letter-spacing: var(--ls-11);
     text-transform: var(--uppercase);
 
     @media (width >= 48rem) {
@@ -156,10 +157,14 @@ p {
   }
 
   .main-title {
-    font-size: var(--fs-26);
+    font-size: var(--fs-20);
     line-height: var(--lh-110);
     letter-spacing: var(--ls-3);
     font-weight: 600;
+
+    @media (width >= 30rem) {
+      font-size: var(--fs-26);
+    }
 
     @media (width >= 48rem) {
       font-size: var(--fs-40);
@@ -209,13 +214,21 @@ p {
     line-height: 1;
     display: flex;
     align-items: center;
-    min-width: 10rem;
+    min-width: 9rem;
+
+    @media (width >= 30rem) {
+      min-width: 10rem;
+    }
   }
 
   .counter-item {
     @apply flex flex-col gap-2 text-left;
     width: calc((100% / 2) - 1.25rem);
-    min-width: 10rem;
+    min-width: 9rem;
+
+    @media (width >= 30rem) {
+      min-width: 10rem;
+    }
 
     @media (width >= 48rem) {
       width: calc((100% / 3) - 5rem);
@@ -322,6 +335,34 @@ p {
     position: relative;
     top: 0;
     animation: pulsate 1.25s infinite ease;
+  }
+
+  .faq-icon {
+    z-index: 1;
+    flex: none;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+  }
+
+  .faq-icon-plus {
+    background-color: var(--dark);
+    width: 0.125rem;
+    height: 100%;
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+  }
+
+  .faq-icon-minus {
+    background-color: var(--dark);
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
   }
 
   @keyframes rotate {
