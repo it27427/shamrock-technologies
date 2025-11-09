@@ -1,14 +1,14 @@
 const swiper = new Swiper(".testimonialSlider", {
   autoplay: {
     delay: 5000,
+    disableOnInteraction: false,
   },
   allowTouchMove: false,
   centeredSlides: true,
-  controller: {
-    inverse: true,
-  },
+  rewind: true,
   slidesPerView: 1,
   spaceBetween: 20,
+  watchOverflow: false,
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -24,5 +24,7 @@ const swiper = new Swiper(".testimonialSlider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+    hideOnClick: false,
+    disabledClass: "swiper-button-disabled",
   },
 });
