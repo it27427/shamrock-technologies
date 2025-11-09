@@ -12,6 +12,8 @@
   --white: oklch(100% 0.00011 271.152);
   --white-10: oklch(100% 0.00011 271.152 / 0.102);
   --white-20: oklch(100% 0.00011 271.152 / 0.2);
+  --white-30: oklch(100% 0.00011 271.152 / 0.6);
+  --white-40: oklch(100% 0.00011 271.152 / 0.122);
   --light: oklch(12.431% 0.01995 352.011 / 0.4);
   --whitedeam: rgba(255, 255, 255, 0.6);
   --black: rgb(12, 4, 7);
@@ -163,11 +165,11 @@ p {
 
     @media (width >= 48rem) {
       font-size: var(--fs-40);
-      letter-spacing: var(--ls-13);
     }
 
     @media (width >= 63rem) {
       font-size: var(--fs-80);
+      letter-spacing: var(--ls-13);
     }
   }
 
@@ -189,11 +191,11 @@ p {
   .testimonial-title {
     color: var(--text-light);
     font-size: var(--fs-20);
-    letter-specing: var(--ls-3);
+    letter-spacing: var(--ls-3);
     font-weight: 600;
     line-height: 1.5;
 
-    @media (width >= 48rem) {
+    @media (width >= 63rem) {
       font-size: var(--fs-32);
     }
   }

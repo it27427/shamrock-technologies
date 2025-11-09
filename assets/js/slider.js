@@ -10,14 +10,14 @@ const swiper = new Swiper(".testimonialSlider", {
   spaceBetween: 20,
   watchOverflow: false,
   breakpoints: {
-    640: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 24,
     },
-    768: {
+    992: {
       slidesPerView: 3,
     },
-    992: {
+    1200: {
       slidesPerView: 4,
     },
   },
