@@ -14,6 +14,7 @@
   --white-20: oklch(100% 0.00011 271.152 / 0.2);
   --white-30: oklch(100% 0.00011 271.152 / 0.6);
   --white-40: oklch(100% 0.00011 271.152 / 0.122);
+  --white-50: oklch(96.115% 0.00011 271.152);
   --light: oklch(12.431% 0.01995 352.011 / 0.4);
   --whitedeam: rgba(255, 255, 255, 0.6);
   --black: rgb(12, 4, 7);
@@ -110,11 +111,7 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: var(--font-poppins);
 }
 
@@ -349,6 +346,10 @@ p {
 }
 
 @layer utilities {
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+
   .z-huge {
     z-index: 999999;
   }
