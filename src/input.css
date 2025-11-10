@@ -20,6 +20,7 @@
   --whitedeam: rgba(255, 255, 255, 0.6);
   --black: rgb(12, 4, 7);
   --black-70: oklch(0% 0 0 / 0.702);
+  --black-10: oklch(27.685% 0.00003 271.152);
   --blacken: rgb(12, 4, 7, 0.4);
   --light-gray: rgb(112, 112, 112);
   --text-primary: rgb(76, 76, 76);
@@ -55,11 +56,13 @@
   --fs-72: 4.5rem;
   --fs-76: 4.75rem;
   --fs-80: 5rem;
+  --fs-83: 5.1785rem;
   --fs-90: 5.625rem;
   --fs-92: 5.75rem;
   --fs-96: 6rem;
   --fs-100: 6.25rem;
   --fs-110: 6.875rem;
+  --fs-156: 9.75rem;
   --fs-200: 12.5rem;
 
   --lh-80: 80%;
@@ -136,6 +139,25 @@ p {
 
     @media (width >= 64rem) {
       font-size: var(--fs-200);
+      line-height: var(--lh-90);
+      letter-spacing: var(--ls-15);
+    }
+  }
+
+  .footer-heading {
+    font-size: var(--fs-48);
+    line-height: var(--lh-90);
+    letter-spacing: var(--ls-11);
+    text-transform: var(--uppercase);
+
+    @media (width >= 48rem) {
+      font-size: var(--fs-83);
+      line-height: var(--lh-80);
+      letter-spacing: var(--ls-14);
+    }
+
+    @media (width >= 64rem) {
+      font-size: var(--fs-156);
       line-height: var(--lh-90);
       letter-spacing: var(--ls-15);
     }
