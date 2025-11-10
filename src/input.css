@@ -144,6 +144,12 @@ p {
     }
   }
 
+  .herotop .primary-heading {
+    @media (width >= 64rem) {
+      letter-spacing: var(--ls-14);
+    }
+  }
+
   .footer-heading {
     font-size: var(--fs-48);
     line-height: var(--lh-90);
@@ -407,11 +413,63 @@ p {
       transform: scale(0.75);
     }
   }
+
+  .select {
+    @apply cursor-pointer bg-white text-(--black) border border-gray-300 transition-all duration-500 ease-in-out rounded-none focus:border-(--dark) focus:outline-none focus:rounded-none w-full px-4 py-3 placeholder:text-gray-400 h-12.5 focus:shadow-none;
+  }
 }
 
 @layer utilities {
   .font-inter {
     font-family: var(--font-inter);
+  }
+
+  .ls-2 {
+    letter-spacing: var(--ls-2);
+  }
+
+  .ls-3 {
+    letter-spacing: var(--ls-3);
+  }
+
+  .ls-4 {
+    letter-spacing: var(--ls-4);
+  }
+
+  .ls-5 {
+    letter-spacing: var(--ls-5);
+  }
+
+  .ls-6 {
+    letter-spacing: var(--ls-6);
+  }
+
+  .ls-8 {
+    letter-spacing: var(--ls-8);
+  }
+
+  .ls-10 {
+    letter-spacing: var(--ls-10);
+  }
+
+  .ls-11 {
+    letter-spacing: var(--ls-11);
+  }
+
+  .ls-12 {
+    letter-spacing: var(--ls-12);
+  }
+
+  .ls-13 {
+    letter-spacing: var(--ls-13);
+  }
+
+  .ls-14 {
+    letter-spacing: var(--ls-14);
+  }
+
+  .ls-15 {
+    letter-spacing: var(--ls-15);
   }
 
   .z-huge {
