@@ -24,6 +24,7 @@
   --black-70: oklch(0% 0 0 / 0.702);
   --black-10: oklch(27.685% 0.00003 271.152);
   --blacken: rgb(12, 4, 7, 0.4);
+  --textdark: oklch(51.028% 0.00006 271.152);
   --light-gray: rgb(112, 112, 112);
   --text-primary: rgb(76, 76, 76);
   --icon-bg: oklch(100% 0.00011 271.152 / 0.102);
