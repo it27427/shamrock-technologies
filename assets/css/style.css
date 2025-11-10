@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-green-50: oklch(98.2% 0.018 155.826);
     --color-green-200: oklch(92.5% 0.084 155.995);
     --color-slate-100: oklch(96.8% 0.007 247.896);
@@ -29,6 +30,7 @@
     --text-base--line-height: calc(1.5 / 1);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -52,6 +54,8 @@
     --white-40: oklch(100% 0.00011 271.152 / 0.122);
     --white-50: oklch(96.115% 0.00011 271.152);
     --white-60: oklch(91.887% 0.0001 271.152);
+    --light-color: oklch(97.614% 0.00011 271.152);
+    --light-color-50: oklch(92.797% 0.00011 271.152);
     --whitedeam: rgba(255, 255, 255, 0.6);
     --black: rgb(12, 4, 7);
     --black-70: oklch(0% 0 0 / 0.702);
@@ -2034,6 +2038,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -2044,6 +2052,12 @@
   }
   .border-\(--card-border\) {
     border-color: var(--card-border);
+  }
+  .border-\(--light-color\) {
+    border-color: var(--light-color);
+  }
+  .border-\(--light-color-50\) {
+    border-color: var(--light-color-50);
   }
   .border-\(--white-20\) {
     border-color: var(--white-20);
@@ -2063,6 +2077,9 @@
   .border-gray-600 {
     border-color: var(--color-gray-600);
   }
+  .border-red-500 {
+    border-color: var(--color-red-500);
+  }
   .bg-\(--black\) {
     background-color: var(--black);
   }
@@ -2080,6 +2097,12 @@
   }
   .bg-\(--icon-bg\) {
     background-color: var(--icon-bg);
+  }
+  .bg-\(--light-color\) {
+    background-color: var(--light-color);
+  }
+  .bg-\(--light-color-50\) {
+    background-color: var(--light-color-50);
   }
   .bg-\(--theme-primary\) {
     background-color: var(--theme-primary);
@@ -2101,9 +2124,6 @@
   }
   .bg-neutral-600 {
     background-color: var(--color-neutral-600);
-  }
-  .bg-primary {
-    background-color: var(--color-primary);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -2225,6 +2245,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
@@ -2404,6 +2428,20 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         scale: 5;
+      }
+    }
+  }
+  .group-hover\:border-\(--dark\) {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        border-color: var(--dark);
+      }
+    }
+  }
+  .group-hover\:text-\(--light-color-50\) {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--light-color-50);
       }
     }
   }
