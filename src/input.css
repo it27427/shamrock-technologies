@@ -19,6 +19,7 @@
   --light: oklch(12.431% 0.01995 352.011 / 0.4);
   --light-color: oklch(97.614% 0.00011 271.152);
   --light-color-50: oklch(92.797% 0.00011 271.152);
+  --light-color-100: oklch(92.191% 0.0001 271.152);
   --whitedeam: rgba(255, 255, 255, 0.6);
   --black: rgb(12, 4, 7);
   --black-70: oklch(0% 0 0 / 0.702);
@@ -204,6 +205,21 @@ p {
     @media (width >= 63rem) {
       font-size: var(--fs-80);
       letter-spacing: var(--ls-13);
+    }
+  }
+
+  .partner-title {
+    font-size: var(--fs-20);
+    line-height: var(--lh-110);
+    letter-spacing: var(--ls-3);
+    font-weight: 500;
+
+    @media (width >= 30rem) {
+      font-size: var(--fs-26);
+    }
+
+    @media (width >= 63rem) {
+      font-size: var(--fs-40);
     }
   }
 
