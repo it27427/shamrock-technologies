@@ -106,7 +106,17 @@
 
           <!-- MAIN-MENU -->
           <div class="hidden lg:flex flex-1">
-            <ul class="w-full flex items-center justify-center gap-4">
+            <ul class="w-full flex items-center justify-center gap-8">
+              <!-- HOME -->
+              <li class="ms-auto">
+                <a
+                  href="index.html"
+                  class="inline-flex items-center justify-center text-white font-inter text-sm transition-colors duration-400 ease-in hover:text-green-200"
+                >
+                  Home
+                </a>
+              </li>
+
               <!-- ABOUT-US -->
               <li class="ms-auto">
                 <a
@@ -218,6 +228,16 @@
         <ul
           class="bg-(--dark) w-full flex flex-col items-start justify-center border-t border-gray-600 p-4"
         >
+          <!-- HOME -->
+          <li class="w-full">
+            <a
+              href="index.html"
+              class="inline-flex items-center justify-start text-white font-inter text-sm w-full p-2 transition-colors duration-400 ease-in hover:text-green-200"
+            >
+              Home
+            </a>
+          </li>
+
           <!-- ABOUT-US -->
           <li class="w-full">
             <a
@@ -330,13 +350,13 @@
         <div class="flex flex-col">
           <div class="flex items-center justify-start">
             <h1 class="primary-heading font-medium text-white first-heading">
-              We’re
+              We’re Web
             </h1>
           </div>
 
           <div class="flex items-center justify-end">
             <h2 class="primary-heading font-medium text-white second-heading">
-              Creative
+              Creators
             </h2>
           </div>
         </div>
@@ -345,18 +365,16 @@
           class="py-5 flex flex-col md:flex-row justify-between items-center herotop"
         >
           <div class="order-2 mb-0 md:order-1 w-1/2 me-auto md:me-0 md:w-auto">
-            <div class="w-28 me-auto mt-5 md:mt-0">
+            <div class="w-45 me-auto mt-5 md:mt-0">
               <ul
-                class="uppercase flex flex-col font-(--font-poppins) w-28 me-auto"
+                class="uppercase flex flex-col font-(--font-poppins) w-40 me-auto"
               >
                 <li class="text-white text-sm poppins-semibold font-bold">
-                  <span class="text-(--whitedeam)">Grow </span>Your
+                  <span class="text-(--whitedeam)">Providing </span>
+                  Next-Gen Software Services
                 </li>
                 <li class="text-white text-sm poppins-semibold font-bold">
-                  Brand <span class="text-(--whitedeam)">Beyond </span>
-                </li>
-                <li class="text-white text-sm poppins-semibold font-bold">
-                  Boundaries
+                  <span class="text-(--whitedeam)">Across the Globe</span>
                 </li>
               </ul>
             </div>
@@ -367,7 +385,7 @@
           >
             <div class="flex items-center justify-center overflow-hidden group">
               <img
-                src="assets/images/hero/home-hero.webp"
+                src="assets/images/hero/hero-thumbnail.webp"
                 alt="home-hero-showcase"
                 class="max-w-full transition-transform group-hover:scale-110"
               />
@@ -377,16 +395,16 @@
           <div
             class="order-2 md:order-3 -mt-15 w-1/2 ms-auto md:ms-0 md:w-auto"
           >
-            <div class="w-22.5 ms-auto">
+            <div class="w-45 ms-auto">
               <ul class="uppercase flex flex-col font-(--font-poppins)">
                 <li class="text-white text-sm poppins-semibold font-bold">
-                  <span class="text-(--whitedeam)">Working </span>
+                  <span class="text-(--whitedeam)">Powering Businesses </span>
                 </li>
                 <li class="text-white text-sm poppins-semibold font-bold">
-                  Across The
+                  Worldwide
                 </li>
                 <li class="text-white text-sm poppins-semibold font-bold">
-                  <span class="text-(--whitedeam)">Globe </span>
+                  <span class="text-(--whitedeam)">with IT Solutions</span>
                 </li>
               </ul>
             </div>
@@ -428,7 +446,7 @@
             class="flex items-center justify-center overflow-hidden w-full lg:max-w-146.5 about-thumb group"
           >
             <img
-              src="assets/images/about/home-about.webp"
+              src="assets/images/about/team-about.webp"
               alt="ABOUT-THUMBNAIL"
               class="max-w-full transition-transform group-hover:scale-110"
             />
@@ -442,46 +460,6 @@
                 designs that stand out in the digital landscape and resonate
                 with audiences, ensuring your brand
               </p>
-            </div>
-
-            <div
-              class="flex items-center flex-wrap md:flex-nowrap gap-5 lg:gap-20 w-full max-w-full counterbox min-h-25"
-            >
-              <div class="counter-item">
-                <span class="text-(--black) counter-heading">
-                  <span
-                    class="counter transition-transform duration-500 ease-in inline-block"
-                    data-target="200"
-                  >
-                    0 </span
-                  >+
-                </span>
-                <span class="text-(--text-primary)"> Satisfied Clients </span>
-              </div>
-
-              <div class="counter-item">
-                <span class="text-(--black) counter-heading">
-                  <span
-                    class="counter transition-transform duration-500 ease-in inline-block"
-                    data-target="600"
-                  >
-                    0 </span
-                  >+
-                </span>
-                <span class="text-(--text-primary)"> Projects Done </span>
-              </div>
-
-              <div class="counter-item">
-                <span class="text-(--black) counter-heading">
-                  <span
-                    class="counter transition-transform duration-500 ease-in inline-block"
-                    data-target="200"
-                  >
-                    0 </span
-                  >M+
-                </span>
-                <span class="text-(--text-primary)"> Total Revenue </span>
-              </div>
             </div>
 
             <div class="flex items-center aboutbox">
@@ -543,6 +521,48 @@
                   </span>
                 </span>
               </a>
+            </div>
+
+            <div class="hidden">
+              <div
+                class="flex items-center flex-wrap md:flex-nowrap gap-5 lg:gap-20 w-full max-w-full counterbox min-h-25"
+              >
+                <div class="counter-item">
+                  <span class="text-(--black) counter-heading">
+                    <span
+                      class="counter transition-transform duration-500 ease-in inline-block"
+                      data-target="200"
+                    >
+                      0 </span
+                    >+
+                  </span>
+                  <span class="text-(--text-primary)"> Satisfied Clients </span>
+                </div>
+
+                <div class="counter-item">
+                  <span class="text-(--black) counter-heading">
+                    <span
+                      class="counter transition-transform duration-500 ease-in inline-block"
+                      data-target="600"
+                    >
+                      0 </span
+                    >+
+                  </span>
+                  <span class="text-(--text-primary)"> Projects Done </span>
+                </div>
+
+                <div class="counter-item">
+                  <span class="text-(--black) counter-heading">
+                    <span
+                      class="counter transition-transform duration-500 ease-in inline-block"
+                      data-target="200"
+                    >
+                      0 </span
+                    >M+
+                  </span>
+                  <span class="text-(--text-primary)"> Total Revenue </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -696,7 +716,7 @@
                 </div>
 
                 <div class="flex flex-col gap-5 w-[calc(100%-5.5rem)]">
-                  <h4 class="card-heading text-white">Brand Identity</h4>
+                  <h4 class="card-heading text-white">Software Development</h4>
 
                   <p class="text-white opacity-70 text-sm">
                     Developing impactful logos and cohesive visual identities
@@ -839,6 +859,55 @@
 
                 <div class="flex flex-col gap-5 w-[calc(100%-5.5rem)]">
                   <h4 class="card-heading text-white">Digital Marketing</h4>
+
+                  <p class="text-white opacity-70 text-sm">
+                    Optimizing your website and content to rank higher on search
+                    engines and attract organic traffic. Designing and executing
+                    personalized email campaigns to conversions.
+                  </p>
+                </div>
+              </li>
+
+              <li
+                class="lg:sticky lg:top-5 bg-(--deep) pb-10 border-b border-(--card-border) flex items-start gap-10 lg:px-3 lg:pt-3 animate-child"
+              >
+                <div
+                  class="inline-flex items-center justify-center rounded-full bg-(--icon-bg) w-12 h-12"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g fill="none" stroke="currentColor" stroke-width="1">
+                      <path
+                        stroke-width="1.5"
+                        d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12Z"
+                      />
+                      <path
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M2.5 9h19"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 6h.009M11 6h.009"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="m8 13l1.227 1.057c.515.445.773.667.773.943s-.258.498-.773.943L8 17m4 0h4"
+                      />
+                    </g>
+                  </svg>
+                </div>
+
+                <div class="flex flex-col gap-5 w-[calc(100%-5.5rem)]">
+                  <h4 class="card-heading text-white">Software maintanence</h4>
 
                   <p class="text-white opacity-70 text-sm">
                     Optimizing your website and content to rank higher on search
@@ -1758,625 +1827,34 @@
           <h5
             class="text-white uppercase text-sm leading-3.5 font-semibold subtitle animate-child"
           >
-            Pricing Plan
+            Smart & Flexible Plans
           </h5>
 
           <h2
-            class="main-title uppercase text-center text-white font-medium animate-child"
+            class="main-heading uppercase text-center text-white font-medium animate-child"
           >
-            <span class="text-(--light-gray)">Customizable</span>
-            Pricing Options
+            <span class="text-(--light-gray)">Customizable </span>
+            Pricing Options for Every
+            <span class="text-(--light-gray)">Business </span> Need
           </h2>
 
           <p class="text-(--whitedeam) text-sm animate-child">
-            Ullam ipsam cenaculum carbo causa umerus vulnus deripio ut.
-            Acerbitas tumultus atrox tumultus usus. Vinum curia supplanto.
+            Unlock the perfect plan for your business. Enjoy flexible pricing,
+            essential tools, and premium support—built to grow with you every
+            step of the way.
           </p>
         </hgroup>
-
-        <ul
-          class="grid gap-10 lg:gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 animate-child"
-        >
-          <li
-            class="bg-(--white-10) transition-all duration-500 ease-in hover:bg-(--white-20)"
-          >
-            <div class="pt-8 px-7 pb-5">
-              <div class="flex items-center gap-2 mb-12 font-inter">
-                <h3 class="text-2xl font-bold text-white">Full-Package</h3>
-                <span
-                  class="inline-flex items-center justify-center rounded-full bg-(--white-10) text-white text-base font-medium py-1 px-3"
-                >
-                  Full Product
-                </span>
-              </div>
-
-              <h4 class="text-2xl text-white font-bold mb-10 font-inter">
-                Tailored Services for
-                <br />
-                <span class="text-(--white-30)">Large Enterprises</span>
-              </h4>
-
-              <h5 class="text-2xl text-white font-semibold mb-4 font-inter">
-                $ 8,500.00 USD/mo
-              </h5>
-
-              <div class="flex items-center aboutbox">
-                <a
-                  href="pricing.html"
-                  class="relative font-inter inline-flex items-center justify-center overflow-hidden bg-neutral-600 w-32 h-10 text-sm font-semibold text-white transition-colors duration-300 group"
-                >
-                  <!-- Background Hover Shapes -->
-                  <span
-                    class="absolute top-0 left-0 bg-white rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
-                  ></span>
-
-                  <span
-                    class="absolute bottom-0 right-0 bg-white rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
-                  ></span>
-
-                  <!-- Button Content -->
-                  <span
-                    class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-neutral-600"
-                  >
-                    <span>Get Started</span>
-
-                    <span
-                      class="relative flex items-center w-4 h-4 overflow-hidden"
-                    >
-                      <!-- First Arrow (slides out) -->
-                      <span
-                        class="absolute left-0 top-0 transition-transform duration-500 ease-out group-hover:translate-x-full"
-                      >
-                        <svg
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          class="w-4 h-4"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </span>
-
-                      <!-- Second Arrow (slides in) -->
-                      <span
-                        class="absolute left-0 top-0 -translate-x-full transition-transform duration-500 ease-in group-hover:translate-x-0"
-                      >
-                        <svg
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          class="w-4 h-4"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            <div class="border border-(--white-40)"></div>
-
-            <div class="pt-5 px-7 pb-4">
-              <div class="mb-2">
-                <div class="flex flex-col gap-4">
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      API integrations and automation
-                    </span>
-                  </div>
-
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      Dedicated account manager
-                    </span>
-                  </div>
-
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      UX/UI design for digital products
-                    </span>
-                  </div>
-
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      Ongoing support & maintenance
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li
-            class="bg-(--white-10) transition-all duration-500 ease-in hover:bg-(--white-20)"
-          >
-            <div class="pt-8 px-7 pb-5">
-              <div class="flex items-center gap-2 mb-12">
-                <h3 class="text-2xl font-bold text-white font-inter">
-                  Professional
-                </h3>
-                <span
-                  class="inline-flex items-center justify-center rounded-full bg-(--white-10) text-white text-base font-medium font-inter py-1 px-3"
-                >
-                  Big Projects
-                </span>
-              </div>
-
-              <h4 class="text-2xl text-white font-bold mb-10 font-inter">
-                Excellent for Growing
-                <br />
-                <span class="text-(--white-30)">Enterprises & Projects</span>
-              </h4>
-
-              <h5 class="text-2xl text-white font-semibold mb-4 font-inter">
-                $ 6,500.00 USD/mo
-              </h5>
-
-              <div class="flex items-center aboutbox">
-                <a
-                  href="pricing.html"
-                  class="relative inline-flex font-inter items-center justify-center overflow-hidden bg-neutral-600 w-32 h-10 text-sm font-semibold text-white transition-colors duration-300 group"
-                >
-                  <!-- Background Hover Shapes -->
-                  <span
-                    class="absolute top-0 left-0 bg-white rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
-                  ></span>
-
-                  <span
-                    class="absolute bottom-0 right-0 bg-white rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
-                  ></span>
-
-                  <!-- Button Content -->
-                  <span
-                    class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-neutral-600"
-                  >
-                    <span>Get Started</span>
-
-                    <span
-                      class="relative flex items-center w-4 h-4 overflow-hidden"
-                    >
-                      <!-- First Arrow (slides out) -->
-                      <span
-                        class="absolute left-0 top-0 transition-transform duration-500 ease-out group-hover:translate-x-full"
-                      >
-                        <svg
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          class="w-4 h-4"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </span>
-
-                      <!-- Second Arrow (slides in) -->
-                      <span
-                        class="absolute left-0 top-0 -translate-x-full transition-transform duration-500 ease-in group-hover:translate-x-0"
-                      >
-                        <svg
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          class="w-4 h-4"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            <div class="border border-(--white-40)"></div>
-
-            <div class="pt-5 px-7 pb-4">
-              <div class="mb-2">
-                <div class="flex flex-col gap-4">
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      Social media marketing strategy
-                    </span>
-                  </div>
-
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      Custom CMS setup
-                    </span>
-                  </div>
-
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      Email marketing setup
-                    </span>
-                  </div>
-
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      Google Analytics integration
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li
-            class="bg-(--white-10) transition-all duration-500 ease-in hover:bg-(--white-20)"
-          >
-            <div class="pt-8 px-7 pb-5">
-              <div class="flex items-center gap-2 mb-12">
-                <h3 class="text-2xl font-bold text-white font-inter">
-                  Starter
-                </h3>
-                <span
-                  class="inline-flex items-center justify-center rounded-full bg-(--white-10) text-white text-base font-medium font-inter py-1 px-3"
-                >
-                  Small Projects
-                </span>
-              </div>
-
-              <h4 class="text-2xl text-white font-bold mb-10 font-inter">
-                Perfect for New and
-                <br />
-                <span class="text-(--white-30)"> Small Businesses </span>
-              </h4>
-
-              <h5 class="text-2xl text-white font-semibold mb-4 font-inter">
-                $ 4,500.00 USD/mo
-              </h5>
-
-              <div class="flex items-center aboutbox">
-                <a
-                  href="pricing.html"
-                  class="relative inline-flex font-inter items-center justify-center overflow-hidden bg-neutral-600 w-32 h-10 text-sm font-semibold text-white transition-colors duration-300 group"
-                >
-                  <!-- Background Hover Shapes -->
-                  <span
-                    class="absolute top-0 left-0 bg-white rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
-                  ></span>
-
-                  <span
-                    class="absolute bottom-0 right-0 bg-white rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
-                  ></span>
-
-                  <!-- Button Content -->
-                  <span
-                    class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-neutral-600"
-                  >
-                    <span>Get Started</span>
-
-                    <span
-                      class="relative flex items-center w-4 h-4 overflow-hidden"
-                    >
-                      <!-- First Arrow (slides out) -->
-                      <span
-                        class="absolute left-0 top-0 transition-transform duration-500 ease-out group-hover:translate-x-full"
-                      >
-                        <svg
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          class="w-4 h-4"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </span>
-
-                      <!-- Second Arrow (slides in) -->
-                      <span
-                        class="absolute left-0 top-0 -translate-x-full transition-transform duration-500 ease-in group-hover:translate-x-0"
-                      >
-                        <svg
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          class="w-4 h-4"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            <div class="border border-(--white-40)"></div>
-
-            <div class="pt-5 px-7 pb-4">
-              <div class="mb-2">
-                <div class="flex flex-col gap-4">
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      Custom website design
-                    </span>
-                  </div>
-
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      Mobile-responsive development
-                    </span>
-                  </div>
-
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      1-month free maintenance
-                    </span>
-                  </div>
-
-                  <div
-                    class="flex items-center gap-2 text-(--white-30) font-inter"
-                  >
-                    <span class="w-6 h-6 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
-                          d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-base font-medium w-[calc(100%-2rem)]">
-                      Social media integration
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
 
         <div
           class="bg-(--white-10) mt-5 p-5 lg:p-10 flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between font-inter animate-child"
         >
           <h4 class="text-2xl font-semibold text-(--white-50) font-inter">
-            Want a unique solution to meet your needs?
+            Want a Smarter, Better Solution for Your Business?
           </h4>
 
           <div class="flex items-center gap-5">
             <a
-              href="pricing.html"
+              href="contact.html"
               class="relative inline-flex items-center justify-center overflow-hidden font-inter bg-green-50 w-32 h-10 text-sm font-semibold text-(--theme-primary) transition-colors duration-300 group"
             >
               <!-- Background Hover Shapes -->
@@ -2434,65 +1912,663 @@
               </span>
             </a>
 
-            <a
-              href="contact.html"
-              class="relative inline-flex font-inter items-center justify-center overflow-hidden bg-neutral-600 w-32 h-10 text-sm font-semibold text-white transition-colors duration-300 group"
-            >
-              <!-- Background Hover Shapes -->
-              <span
-                class="absolute top-0 left-0 bg-white rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
-              ></span>
-
-              <span
-                class="absolute bottom-0 right-0 bg-white rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
-              ></span>
-
-              <!-- Button Content -->
-              <span
-                class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-neutral-600"
+            <div class="hidden">
+              <a
+                href="contact.html"
+                class="relative inline-flex hidden font-inter items-center justify-center overflow-hidden bg-neutral-600 w-32 h-10 text-sm font-semibold text-white transition-colors duration-300 group"
               >
-                <span>Get Started</span>
+                <!-- Background Hover Shapes -->
+                <span
+                  class="absolute top-0 left-0 bg-white rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                ></span>
 
                 <span
-                  class="relative flex items-center w-4 h-4 overflow-hidden"
-                >
-                  <!-- First Arrow (slides out) -->
-                  <span
-                    class="absolute left-0 top-0 transition-transform duration-500 ease-out group-hover:translate-x-full"
-                  >
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      class="w-4 h-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
+                  class="absolute bottom-0 right-0 bg-white rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                ></span>
 
-                  <!-- Second Arrow (slides in) -->
+                <!-- Button Content -->
+                <span
+                  class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-neutral-600"
+                >
+                  <span>Get Started</span>
+
                   <span
-                    class="absolute left-0 top-0 -translate-x-full transition-transform duration-500 ease-in group-hover:translate-x-0"
+                    class="relative flex items-center w-4 h-4 overflow-hidden"
                   >
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      class="w-4 h-4"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <!-- First Arrow (slides out) -->
+                    <span
+                      class="absolute left-0 top-0 transition-transform duration-500 ease-out group-hover:translate-x-full"
                     >
-                      <path
-                        d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
-                        fill="currentColor"
-                      />
-                    </svg>
+                      <svg
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        class="w-4 h-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </span>
+
+                    <!-- Second Arrow (slides in) -->
+                    <span
+                      class="absolute left-0 top-0 -translate-x-full transition-transform duration-500 ease-in group-hover:translate-x-0"
+                    >
+                      <svg
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        class="w-4 h-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </span>
                   </span>
                 </span>
-              </span>
-            </a>
+              </a>
+            </div>
           </div>
+        </div>
+
+        <!-- PACKAGES-FOR-FUTURES -->
+        <div class="hidden">
+          <ul
+            class="grid gap-10 lg:gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 animate-child"
+          >
+            <li
+              class="bg-(--white-10) transition-all duration-500 ease-in hover:bg-(--white-20)"
+            >
+              <div class="pt-8 px-7 pb-5">
+                <div class="flex items-center gap-2 mb-12 font-inter">
+                  <h3 class="text-2xl font-bold text-white">Full-Package</h3>
+                  <span
+                    class="inline-flex items-center justify-center rounded-full bg-(--white-10) text-white text-base font-medium py-1 px-3"
+                  >
+                    Full Product
+                  </span>
+                </div>
+
+                <h4 class="text-2xl text-white font-bold mb-10 font-inter">
+                  Tailored Services for
+                  <br />
+                  <span class="text-(--white-30)">Large Enterprises</span>
+                </h4>
+
+                <h5 class="text-2xl text-white font-semibold mb-4 font-inter">
+                  $ 8,500.00 USD/mo
+                </h5>
+
+                <div class="flex items-center aboutbox">
+                  <a
+                    href="pricing.html"
+                    class="relative font-inter inline-flex items-center justify-center overflow-hidden bg-neutral-600 w-32 h-10 text-sm font-semibold text-white transition-colors duration-300 group"
+                  >
+                    <!-- Background Hover Shapes -->
+                    <span
+                      class="absolute top-0 left-0 bg-white rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                    ></span>
+
+                    <span
+                      class="absolute bottom-0 right-0 bg-white rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                    ></span>
+
+                    <!-- Button Content -->
+                    <span
+                      class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-neutral-600"
+                    >
+                      <span>Get Started</span>
+
+                      <span
+                        class="relative flex items-center w-4 h-4 overflow-hidden"
+                      >
+                        <!-- First Arrow (slides out) -->
+                        <span
+                          class="absolute left-0 top-0 transition-transform duration-500 ease-out group-hover:translate-x-full"
+                        >
+                          <svg
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            class="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+
+                        <!-- Second Arrow (slides in) -->
+                        <span
+                          class="absolute left-0 top-0 -translate-x-full transition-transform duration-500 ease-in group-hover:translate-x-0"
+                        >
+                          <svg
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            class="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="border border-(--white-40)"></div>
+
+              <div class="pt-5 px-7 pb-4">
+                <div class="mb-2">
+                  <div class="flex flex-col gap-4">
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        API integrations and automation
+                      </span>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        Dedicated account manager
+                      </span>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        UX/UI design for digital products
+                      </span>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        Ongoing support & maintenance
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="bg-(--white-10) transition-all duration-500 ease-in hover:bg-(--white-20)"
+            >
+              <div class="pt-8 px-7 pb-5">
+                <div class="flex items-center gap-2 mb-12">
+                  <h3 class="text-2xl font-bold text-white font-inter">
+                    Professional
+                  </h3>
+                  <span
+                    class="inline-flex items-center justify-center rounded-full bg-(--white-10) text-white text-base font-medium font-inter py-1 px-3"
+                  >
+                    Big Projects
+                  </span>
+                </div>
+
+                <h4 class="text-2xl text-white font-bold mb-10 font-inter">
+                  Excellent for Growing
+                  <br />
+                  <span class="text-(--white-30)">Enterprises & Projects</span>
+                </h4>
+
+                <h5 class="text-2xl text-white font-semibold mb-4 font-inter">
+                  $ 6,500.00 USD/mo
+                </h5>
+
+                <div class="flex items-center aboutbox">
+                  <a
+                    href="pricing.html"
+                    class="relative inline-flex font-inter items-center justify-center overflow-hidden bg-neutral-600 w-32 h-10 text-sm font-semibold text-white transition-colors duration-300 group"
+                  >
+                    <!-- Background Hover Shapes -->
+                    <span
+                      class="absolute top-0 left-0 bg-white rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                    ></span>
+
+                    <span
+                      class="absolute bottom-0 right-0 bg-white rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                    ></span>
+
+                    <!-- Button Content -->
+                    <span
+                      class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-neutral-600"
+                    >
+                      <span>Get Started</span>
+
+                      <span
+                        class="relative flex items-center w-4 h-4 overflow-hidden"
+                      >
+                        <!-- First Arrow (slides out) -->
+                        <span
+                          class="absolute left-0 top-0 transition-transform duration-500 ease-out group-hover:translate-x-full"
+                        >
+                          <svg
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            class="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+
+                        <!-- Second Arrow (slides in) -->
+                        <span
+                          class="absolute left-0 top-0 -translate-x-full transition-transform duration-500 ease-in group-hover:translate-x-0"
+                        >
+                          <svg
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            class="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="border border-(--white-40)"></div>
+
+              <div class="pt-5 px-7 pb-4">
+                <div class="mb-2">
+                  <div class="flex flex-col gap-4">
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        Social media marketing strategy
+                      </span>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        Custom CMS setup
+                      </span>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        Email marketing setup
+                      </span>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        Google Analytics integration
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="bg-(--white-10) transition-all duration-500 ease-in hover:bg-(--white-20)"
+            >
+              <div class="pt-8 px-7 pb-5">
+                <div class="flex items-center gap-2 mb-12">
+                  <h3 class="text-2xl font-bold text-white font-inter">
+                    Starter
+                  </h3>
+                  <span
+                    class="inline-flex items-center justify-center rounded-full bg-(--white-10) text-white text-base font-medium font-inter py-1 px-3"
+                  >
+                    Small Projects
+                  </span>
+                </div>
+
+                <h4 class="text-2xl text-white font-bold mb-10 font-inter">
+                  Perfect for New and
+                  <br />
+                  <span class="text-(--white-30)"> Small Businesses </span>
+                </h4>
+
+                <h5 class="text-2xl text-white font-semibold mb-4 font-inter">
+                  $ 4,500.00 USD/mo
+                </h5>
+
+                <div class="flex items-center aboutbox">
+                  <a
+                    href="pricing.html"
+                    class="relative inline-flex font-inter items-center justify-center overflow-hidden bg-neutral-600 w-32 h-10 text-sm font-semibold text-white transition-colors duration-300 group"
+                  >
+                    <!-- Background Hover Shapes -->
+                    <span
+                      class="absolute top-0 left-0 bg-white rounded-full w-10 h-10 transform -translate-x-1/2 -translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                    ></span>
+
+                    <span
+                      class="absolute bottom-0 right-0 bg-white rounded-full w-10 h-10 transform translate-x-1/2 translate-y-1/2 scale-0 origin-center transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:scale-[5]"
+                    ></span>
+
+                    <!-- Button Content -->
+                    <span
+                      class="relative z-10 flex items-center justify-center gap-2 transition-colors duration-400 group-hover:text-neutral-600"
+                    >
+                      <span>Get Started</span>
+
+                      <span
+                        class="relative flex items-center w-4 h-4 overflow-hidden"
+                      >
+                        <!-- First Arrow (slides out) -->
+                        <span
+                          class="absolute left-0 top-0 transition-transform duration-500 ease-out group-hover:translate-x-full"
+                        >
+                          <svg
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            class="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+
+                        <!-- Second Arrow (slides in) -->
+                        <span
+                          class="absolute left-0 top-0 -translate-x-full transition-transform duration-500 ease-in group-hover:translate-x-0"
+                        >
+                          <svg
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            class="w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.7083 7.111L7.6733 3.076L8.5593 2.19L14.2226 7.85333L8.5593 13.5167L7.6733 12.63L11.7083 8.595H0.888672V7.111H11.7083Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="border border-(--white-40)"></div>
+
+              <div class="pt-5 px-7 pb-4">
+                <div class="mb-2">
+                  <div class="flex flex-col gap-4">
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        Custom website design
+                      </span>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        Mobile-responsive development
+                      </span>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        1-month free maintenance
+                      </span>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-2 text-(--white-30) font-inter"
+                    >
+                      <span class="w-6 h-6 flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-base font-medium w-[calc(100%-2rem)]">
+                        Social media integration
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -3062,15 +3138,6 @@
                   class="font-inter font-medium text-base text-medium text-white transition-all duration-400 hover:underline"
                 >
                   About us
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="pricing.html"
-                  class="font-inter font-medium text-base text-medium text-white transition-all duration-400 hover:underline"
-                >
-                  Pricing
                 </a>
               </li>
             </ul>
