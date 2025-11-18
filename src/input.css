@@ -291,6 +291,10 @@ p {
     @media (width >= 48rem) {
       font-size: var(--fs-40);
     }
+
+    @media (width >= 53rem) {
+      font-size: var(--fs-34);
+    }
   }
 
   .product-heading {
